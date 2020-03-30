@@ -1,68 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400&display=swap');
+
 body {
-    color: #666;
-    background-color: #fff;
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.7em;
+  color: #666;
+  background-color: #fff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
 }
 
 /*======================================
 //--//-->   INTRO
 ======================================*/
 .intro {
-    height: 60vh;
-    background-size: cover;
-    position: relative;
-    color: #fff;
-    background-image: url(../afbeeldingen//87068643_512859712748803_5864739875177103360_n.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .intro .intro-content {
-    text-align: center;
-    position: relative;
-  }
-  
-  .intro .overlay-intro {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: .9;
-  }
-  
-  .intro .intro-title {
-    color: #fff;
-    font-weight: 600;
-  }
-  
-  .intro .intro-subtitle {
-    font-weight: 300;
-    letter-spacing: 1.25px;
-  }
-  
- .intro-content {
-    margin-top: 100px;
-    font-size: 2em;
+  height: 60vh;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  background-color: black;
+  background-image: url(../afbeeldingen//87068643_512859712748803_5864739875177103360_n.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
 
+.intro .intro-content {
+  text-align: center;
+  position: relative;
+}
+
+.intro .overlay-intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+
+.intro .intro-subtitle {
+
+  letter-spacing: 1.25px;
+  font-style: italic;
+  font-size: 35px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.intro-content {
+  margin-top: 100px;
+}
+
+.intro-title {
+  text-transform: uppercase;
+  font-size: 125px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.display-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+@media (max-width: 550px), (max-height: 550px) {
+  .intro-title {
+    font-size: 60px;
   }
-  
- .intro-title {
-    text-transform: uppercase;
-    font-size: 3em;
-    letter-spacing: 1px;
+
+  .intro .intro-subtitle {
+    font-size: 25px;
   }
-  
-  .display-table {
-    width: 100%;
-    height: 100%;
-    display: table;
-  }
-  
+
   .table-cell {
-    display: table-cell;
-    vertical-align: middle;
+    line-height: 25px;
   }
+}
 
