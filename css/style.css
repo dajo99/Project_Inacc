@@ -7,11 +7,61 @@ body {
     line-height: 1.7em;
 }
 
-#intro {
-    background-image: url(/afbeeldingen/87068643_512859712748803_5864739875177103360_n.jpg) center center fixed;
+/*======================================
+//--//-->   INTRO
+======================================*/
+.intro {
+    height: 60vh;
     background-size: cover;
+    position: relative;
+    color: #fff;
+    background-image: url(../afbeeldingen//87068643_512859712748803_5864739875177103360_n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .intro .intro-content {
     text-align: center;
-    padding: 100px 0;
-    
-}
+    position: relative;
+    vertical-align: middle;
+  }
+  
+  .intro .overlay-intro {
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .intro .intro-title {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .intro .intro-subtitle {
+    font-weight: 300;
+  }
+  
+ .intro-content {
+    margin-top: 100px;
+    font-size: 2em;
+    letter-spacing: 1.25px;
+  }
+  
+ .intro-title {
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 1px;
+  }
+  
+  .display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+  
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
 
