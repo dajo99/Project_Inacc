@@ -20,7 +20,13 @@ h3 {
   font-size: 150%;
 }
 
-a:link, a:visited, .navbar-light .navbar-nav .nav-link:link, .navbar-light .navbar-nav .nav-link:visited {
+.navbar-light .navbar-nav .nav-link:link, .navbar-light .navbar-nav .nav-link:visited {
+  color: #444;
+}
+
+a:link, a:visited,
+.navbar-light .navbar-nav .active .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
   color: #4d699d;
 }
 
