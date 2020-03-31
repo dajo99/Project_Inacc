@@ -82,6 +82,12 @@ a:visited,
   margin-left: 330px;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
 /*======================================
 //--//-->   INTRO
 ======================================*/
@@ -130,11 +136,11 @@ a:visited,
 }
 */
 .intro-title {
-  text-transform: uppercase;
+/* text-transform: uppercase; */
   font-size: 125px;
-  font-weight: 800;
+/*font-weight: 800;
   letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; */
 }
 
 @media (max-width: 550px), (max-height: 550px) {
