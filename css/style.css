@@ -46,7 +46,7 @@ a:visited,
   padding: 9px 10px !important;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navbar-static-top {
     position: fixed;
     top: 0;

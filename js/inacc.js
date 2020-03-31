@@ -1,7 +1,7 @@
 let $body;
 
 function windowResize() {
-    if ($(window).width() >= 992) {
+    if (window.matchMedia('(min-width: 768px)').matches) {
         $body.css('padding-top', $('#mainNav').outerHeight());
     } else {
         $body.css('padding-top', 0);
