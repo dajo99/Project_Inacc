@@ -78,8 +78,6 @@ li a {
   border-radius: .25rem;
 }
 
-
-
 .toggle-left {
 
   float: right;
@@ -93,15 +91,18 @@ li a {
 
 .intro {
 /*  height: 60vh;*/
-  background-size: cover;
-  position: relative;
+
   color: #fff;
   background-color: black;
-  background-image: url(../afbeeldingen//87068643_512859712748803_5864739875177103360_n.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
+}
+.bg-image{
+  background-image: url(../afbeeldingen//87068643_512859712748803_5864739875177103360_n.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .intro .intro-content {
@@ -124,6 +125,7 @@ li a {
   font-style: italic;
   font-size: 35px;
   font-family: "Montserrat Alternates", sans-serif;
+  line-height: 40px;
 }
 /*
 .intro-content {
@@ -145,6 +147,8 @@ li a {
 
   .intro .intro-subtitle {
     font-size: 25px;
+    line-height: 30px;
+
   }
 }
 
