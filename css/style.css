@@ -136,9 +136,9 @@ h1 {
 }
 */
 .intro-title {
-/* text-transform: uppercase; */
+  /* text-transform: uppercase; */
   font-size: 125px;
-/*font-weight: 800;
+  /*font-weight: 800;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif; */
 }
@@ -173,4 +173,13 @@ footer hr {
 
 #footer-logo {
   filter: invert(1);
+}
+
+/*======================================
+//--//-->   CONTACT
+======================================*/
+
+#contact-image-1 {
+  background: url("../afbeeldingen/kantoor-inacc-1.jpg") no-repeat center;
+  background-size: cover;
 }
