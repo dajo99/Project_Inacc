@@ -3,19 +3,23 @@
 }
 .img-service{
     display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
 }
 
 .centered {
     position: absolute;
-    background: rgba(0,91,141,0.4);
+    background: rgba(0,0,0,0.5);
     color: #FFF;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 45px;
     z-index: 1;
-    font-family: 'futura-pt', 'Open Sans',sans-serif;
-    font-size: 18px;
+    font-size: 20px;
   }
   .position{
     padding-left: 15px;
