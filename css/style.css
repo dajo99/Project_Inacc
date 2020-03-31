@@ -24,11 +24,13 @@ h3 {
   font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link:link, .navbar-light .navbar-nav .nav-link:visited {
+.navbar-light .navbar-nav .nav-link:link,
+.navbar-light .navbar-nav .nav-link:visited {
   color: #444;
 }
 
-a:link, a:visited,
+a:link,
+a:visited,
 .navbar-light .navbar-nav .active .nav-link,
 .navbar-light .navbar-nav .nav-link:hover {
   color: #4d699d;
@@ -44,32 +46,40 @@ a:link, a:visited,
   padding: 9px 10px !important;
 }
 
+@media (min-width: 992px) {
+  .navbar-static-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .scrolled #mainNav .navbar-brand img {
+    height: 50px;
+  }
+
+  .scrolled #mainNav .nav-link {
+    font-size: 90%;
+  }
+}
+
 #mainNav * {
   transition: all 0.4s ease;
 }
 
-#mainNav.scrolled .navbar-brand img {
-  height: 50px;
-}
-
-#mainNav.scrolled .nav-link {
-  font-size: 90%;
-}
-
 .navbar-toggler {
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid black;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .toggle-left {
-
   float: right;
   margin-left: 330px;
-
 }
 
 /*======================================
@@ -77,14 +87,14 @@ a:link, a:visited,
 ======================================*/
 
 .intro {
-/*  height: 60vh;*/
+  /*  height: 60vh;*/
 
   color: #fff;
   background-color: black;
   padding: 0;
   margin: 0;
 }
-.bg-image{
+.bg-image {
   background-image: url(../afbeeldingen//87068643_512859712748803_5864739875177103360_n.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -135,7 +145,6 @@ a:link, a:visited,
   .intro .intro-subtitle {
     font-size: 25px;
     line-height: 30px;
-
   }
 }
 
@@ -149,7 +158,7 @@ footer {
 }
 
 footer h3 {
-  color: #4d699d
+  color: #4d699d;
 }
 
 footer hr {

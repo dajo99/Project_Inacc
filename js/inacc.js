@@ -1,11 +1,24 @@
+let $body;
+
+function windowResize() {
+    if ($(window).width() >= 992) {
+        $body.css('padding-top', $('#mainNav').outerHeight());
+    } else {
+        $body.css('padding-top', 0);
+    }
+}
+
 $(function () {
-    $('body').css('padding-top', $('nav').outerHeight());
+    $body = $('body');
+
+    windowResize();
+    $(window).resize(windowResize);
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 20) {
-            $('#mainNav').addClass('scrolled');
+            $body.addClass('scrolled');
         } else {
-            $('#mainNav').removeClass('scrolled');
+            $body.removeClass('scrolled');
         }
     });
 });
