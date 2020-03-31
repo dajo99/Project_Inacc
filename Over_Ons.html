@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style_Over_Ons.css rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="afbeeldingen/Logo_inacc.png" height="70" class="d-inline-block align-top" alt="Logo Inacc">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#portfolio">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Over ons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Onze services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Links</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="footer py-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p><img src="afbeeldingen/Logo_inacc.png" id="footer-logo" alt="Logo Inacc" width="220"></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Adres</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quaerat magni est harum
+                            similique error
+                            tenetur. Ratione quam animi aut quos est nobis excepturi, molestiae aliquam odio deserunt
+                            ullam nam!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Gegevens</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quaerat magni est harum
+                            similique error
+                            tenetur. Ratione quam animi aut quos est nobis excepturi, molestiae aliquam odio deserunt
+                            ullam nam!</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="text-muted">
+                            Boekhouders op Mensenmaat
+                            <div class="pull-right">
+                                <a href="">Privacy</a> | <a href="">Terms and Conditions</a>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <p class="copyright m-0">
+                    &copy; 2020 Inacc
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function onHeaderResize() {
+            $('body').css('padding-top', $('nav').outerHeight());
+        }
+        $(document).ready(onHeaderResize);
+    </script>
+
+</body>
+
+</html>
