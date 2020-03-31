@@ -2,23 +2,111 @@
 <html lang="nl">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-grid.css" rel="stylesheet">
-    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="css/bootstrap-reboot.css" rel="stylesheet">
-    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/style_services.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="css/bootstrap-reboot.css" rel="stylesheet">
+  <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style_services.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="afbeeldingen/Logo_inacc.png" height="70" class="d-inline-block align-top" alt="Logo Inacc">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Over ons</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#services">Onze services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Links</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="flex-shrink-0">
+    <div class="container py-5">
+
+      <section id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <header>
+                <h2>Een greep uit onze bedrijfsactiviteiten</h2>
+              </header>
+            </div>
+          </div>
+
+          <article>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <div class="img-service">
+
+                    <a role="button" tabindex="0" onclick=""><img class="img-fluid" src="afbeeldingen/accountancy.jpg"
+                        alt="accountancy" />
+                      <div class="centered overlay-service">
+                        <div class="position"> Accountancy</div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="img-service">
+                    <a role="button" tabindex="0" onclick=""><img class="img-fluid" src="afbeeldingen/accountancy.jpg"
+                        alt="accountancy" /></a>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="img-service">
+                    <a role="button" tabindex="0" onclick=""><img class="img-fluid" src="afbeeldingen/accountancy.jpg"
+                        alt="accountancy" /></a>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="img-service">
+                    <a role="button" tabindex="0" onclick=""><img class="img-fluid" src="afbeeldingen/accountancy.jpg"
+                        alt="accountancy" /></a>
+                  </div>
+                </div>
+              </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    function onHeaderResize() {
+      $('body').css('padding-top', $('nav').outerHeight());
+    }
+    $(document).ready(onHeaderResize);
+  </script>
 </body>
 
 </html>
