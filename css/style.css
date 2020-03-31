@@ -27,8 +27,9 @@ a:link, a:visited {
 /*======================================
 //--//-->   INTRO
 ======================================*/
+
 .intro {
-  height: 60vh;
+/*  height: 60vh;*/
   background-size: cover;
   position: relative;
   color: #fff;
@@ -43,6 +44,7 @@ a:link, a:visited {
 .intro .intro-content {
   text-align: center;
   position: relative;
+  padding: 10rem 0;
 }
 
 .intro .overlay-intro {
@@ -60,29 +62,17 @@ a:link, a:visited {
   font-size: 35px;
   font-family: "Montserrat Alternates", sans-serif;
 }
-
+/*
 .intro-content {
   margin-top: 100px;
 }
-
+*/
 .intro-title {
   text-transform: uppercase;
   font-size: 125px;
   font-weight: 800;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
-}
-
-.display-table {
-  width: 100%;
-  height: 100%;
-  display: table;
-}
-
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
-  line-height: 40px;
 }
 
 @media (max-width: 550px), (max-height: 550px) {
@@ -92,10 +82,6 @@ a:link, a:visited {
 
   .intro .intro-subtitle {
     font-size: 25px;
-  }
-
-  .table-cell {
-    line-height: 25px;
   }
 }
 
