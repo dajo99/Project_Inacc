@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400&display=swap");
+
+html,
+body {
+  height: 100%;
+}
 
 body {
   color: #666;
@@ -7,6 +12,16 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.7em;
+  display: flex;
+  flex-flow: column;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+a:link, a:visited {
+  color: #4d699d;
 }
 
 /*======================================
@@ -36,17 +51,15 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .intro .intro-subtitle {
-
   letter-spacing: 1.25px;
   font-style: italic;
   font-size: 35px;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
-
 
 .intro-content {
   margin-top: 100px;
@@ -57,9 +70,8 @@ body {
   font-size: 125px;
   font-weight: 800;
   letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 .display-table {
   width: 100%;
@@ -87,3 +99,23 @@ body {
   }
 }
 
+/*======================================
+//--//-->   FOOTER
+======================================*/
+footer {
+  margin-top: auto;
+  background-color: #222;
+  color: #bbb;
+}
+
+footer h3 {
+  color: #4d699d
+}
+
+footer hr {
+  border-color: #333;
+}
+
+#footer-logo {
+  filter: invert(1);
+}
