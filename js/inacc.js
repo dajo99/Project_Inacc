@@ -11,8 +11,8 @@ function windowResize() {
 $(function () {
     $body = $('body');
 
-    windowResize();
-    $(window).resize(windowResize);
+    // windowResize();
+    // $(window).resize(windowResize);
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 20) {

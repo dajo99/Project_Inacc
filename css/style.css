@@ -35,39 +35,49 @@ a:visited,
 .navbar-light .navbar-nav .nav-link:hover {
   color: #4d699d;
 }
-
+/*
 .logo_container {
   margin-top: 20px;
 }
 
 .navbar-toggle {
-  /* (80px - button height 34px) / 2 = 23px */
+  //(80px - button height 34px) / 2 = 23px
   margin-top: 23px;
   padding: 9px 10px !important;
+}*/
+
+#mainNav .nav-link {
+  font-size: 15px;
 }
 
 @media (min-width: 768px) {
-  .navbar-static-top {
+  body {
+    padding-top: 100px;
+  }
+
+  #mainNav {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
-  }
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }  
 
   .scrolled #mainNav .navbar-brand img {
     height: 50px;
   }
 
   .scrolled #mainNav .nav-link {
-    font-size: 90%;
+    font-size: 14px;
   }
 }
 
 #mainNav * {
   transition: all 0.4s ease;
 }
-
+/*
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -80,7 +90,7 @@ a:visited,
 .toggle-left {
   float: right;
   margin-left: 330px;
-}
+}*/
 
 h1 {
   text-transform: uppercase;
