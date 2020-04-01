@@ -4,19 +4,20 @@
 }
 .img-service a:hover .centered{
     position: absolute;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgb(255,255,255, 0.8);
     color: black;
     width: 100%;
     height: 100%;
     z-index: 1;
+    font-size:20px;
     font-weight: bold;
-    transition: all 0.7s ease;
     background-image: url(../afbeeldingen/Logo_inacc.png);
     background-repeat: no-repeat;
-    background-position: center 70%;
-    background-size: 160px;
+    background-position: center 78%;
+    background-size: 65%;
     filter: invert(1);
-    opacity: .9;
+    opacity: .8;
+    transition: all 0.7s ease;
 }
 .img-service a:focus img {
     border: 4px solid black;
@@ -35,7 +36,7 @@
 
 .centered {
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     color: #FFF;
     bottom: 0;
     left: 0;
@@ -48,10 +49,10 @@
   }
   .overlay-text{
     text-align: center;
-    padding: 0px 8px;
+    padding: 10px 8px;
     line-height: 22px;
   }
-  @media (max-width: 767px){
+  @media (max-width: 900px){
     .centered {
         font-size: 20px;
         height: 50px;    
@@ -62,12 +63,12 @@
 
     }
     .overlay-text{
-        line-height: 40px;
+        line-height: 30px;
         font-size: 22px;
     }
   }
 
-  @media (min-width: 768px) and (max-width:1200px){
+  @media (min-width: 900px) and (max-width:1200px){
     .centered {
         font-size: 14px;
         height: 40px;  
