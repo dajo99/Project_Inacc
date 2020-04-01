@@ -31,85 +31,238 @@
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">Over ons</a></li>
-          <li class="nav-item active"><a class="nav-link" href="#services">Onze services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Links</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="over-ons.html">Over ons</a></li>
+          <li class="nav-item active"><a class="nav-link" href="services.html">Onze services</a></li>
+          <li class="nav-item"><a class="nav-link" href="links.html">Links</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <header class="intro bg-image">
+    <div class="overlay-intro"></div>
+    <div class="intro-content">
+      <div class="container">
+        <h1>Onze services</h1>
+      </div>
+    </div>
+  </header>
 
   <main class="flex-shrink-0">
     <div class="container py-5">
 
-      <section id="services">
+      <article id="services">
         <div class="container">
-          <div class="row">
+          <header class="row">
             <div class="col-md-12 mb-3">
-              <header>
-                <h2>Een greep uit onze bedrijfsactiviteiten</h2>
-              </header>
+              <h2>Een greep uit onze bedrijfsactiviteiten</h2>
+            </div>
+          </header>
+
+          <div class="row">
+            <div class="col-md-12">
+
+              <section id="services-images" class="row">
+                <article class="col-sm-6 col-lg-3 mb-3">
+                  <div class="img-service overlay-image">
+                    <a href="#services-text" role="button" tabindex="0" onclick="showingDiv('text-acc');" id="acc"><img
+                        class="img-fluid" src="afbeeldingen/accountancy.jpg" alt="Accountancy" />
+                      <div class="centered ">
+                        <h3 class="overlay-text">Accountancy</h3>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="col-sm-6 col-lg-3 get-floated mb-3 ">
+                  <div class="img-service overlay-image">
+                    <a href="#services-text" role="button" tabindex="0" onclick="showingDiv('text-fisc');"><img
+                        class="img-fluid" src="afbeeldingen/fiscaliteit.jpg" alt="Fiscaliteit" />
+                      <div class="centered ">
+                        <h3 class="overlay-text">Fiscaliteit</h3>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="col-sm-6 col-lg-3 mb-3">
+                  <div class="img-service overlay-image">
+                    <a href="#services-text" role="button" tabindex="0" onclick="showingDiv('text-advies');"><img
+                        class="img-fluid" src="afbeeldingen/advies.jpg" alt="Financieel en juridisch advies" />
+                      <div class="centered ">
+                        <h3 class="overlay-text">Financieel &amp; juridisch advies</h3>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="col-sm-6 col-lg-3 mb-3 ">
+                  <div class="img-service overlay-image">
+                    <a href="#services-text" role="button" tabindex="0" onclick="showingDiv('text-wet');"><img
+                        class="img-fluid" src="afbeeldingen/wettelijke-opdrachten.jpg" alt="Wettelijke opdrachten" />
+                      <div class="centered ">
+                        <h3 class="overlay-text">Wettelijke opdrachten</h3>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </section>
+
+              <section id="services-text" class="row ">
+                <div class="col-md-12 ">
+
+                  <article id="text-acc" class="row my-2">
+                    <div class="col-md-12">
+                      <h3>Accountancy</h3>
+                      <ul>
+                        <li>Ut nec metus iaculis, auctor mauris quis, lacinia risus.</li>
+                        <li>Cras hendrerit risus in luctus gravida.</li>
+                        <li> Praesent varius arcu nec ornare gravida.
+                          <ul>
+                            <li>Fusce quis quam id leo pharetra varius.</li>
+                            <li>Suspendisse sagittis nisl a massa ornare pulvinar.</li>
+                            <li>Aliquam luctus nisi vitae nisi volutpat luctus.</li>
+                          </ul>
+                        </li>
+                        <li>Sed sagittis tortor ac mauris finibus tempor.</li>
+                        <li>Fusce non ante mattis, sagittis arcu nec, malesuada massa.</li>
+                        <li>Integer in orci a risus bibendum tincidunt.</li>
+                        <li>Donec sit amet libero non odio viverra fermentum.
+                          <ul>
+                            <li>Nam vulputate quam sed tellus placerat hendrerit.</li>
+                            <li>In fermentum metus ac quam blandit, sit amet commodo metus commodo.</li>
+                          </ul>
+                        </li>
+                        <li>Sed rhoncus felis ac tellus scelerisque, eget rhoncus justo tincidunt.</li>
+
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="text-fisc" class="row my-2">
+                    <div class="col-md-12">
+                      <h3 id="nav-fisc">Fiscaliteit</h3>
+                      <ul>
+                        <li>Nam ullamcorper metus eget ante euismod varius.</li>
+                        <li>In vitae metus pellentesque, pretium quam sed, commodo lacus.
+                          <ul>
+                            <li>Fusce non ante mattis, sagittis arcu nec, malesuada massa.</li>
+                            <li>Integer in orci a risus bibendum tincidunt.</li>
+                          </ul>
+                        </li>
+                        <li>Fusce quis quam id leo pharetra varius.</li>
+                        <li>Suspendisse sagittis nisl a massa ornare pulvinar.</li>
+                        <li>Aliquam luctus nisi vitae nisi volutpat luctus.</li>
+                        <li>Phasellus consequat felis nec diam vulputate, porta vehicula nisl faucibus.</li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article id="text-advies" class="row my-2">
+                    <div class="col-md-12">
+                      <div id="financieel-advies" class="row ">
+                        <div class="col-md-12">
+                          <h3>Financieel &amp; juridisch advies</h3>
+                          <ul>
+                            <li>Fusce sit amet ante convallis, tristique orci at, placerat est.</li>
+                            <li>Morbi eget tellus vel dolor elementum vestibulum.</li>
+                            <li>In semper nulla nec elit pretium, nec rutrum arcu volutpat.</li>
+                            <li>Donec ultrices mauris non nunc mollis molestie.</li>
+                            <li>Sed gravida ante sit amet mi convallis, id vulputate ligula tincidunt.</li>
+                            <li>Donec lacinia lacus nec arcu convallis, nec varius risus porta.</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div id="starters-advies" class="row">
+                        <div class="col-md-12 ">
+                          <h3>Startersbegeleiding</h3>
+                          <ul>
+                            <li>Sed sed quam in massa tempor commodo.</li>
+                            <li>Pellentesque malesuada sem eget velit pulvinar dictum.</li>
+                            <li>Quisque sed lorem fringilla, imperdiet ante vitae, porttitor lacus.</li>
+                            <li>Phasellus cursus leo eget blandit aliquet.
+                              <ul>
+                                <li>Nam ullamcorper metus eget ante euismod varius.</li>
+                                <li>In vitae metus pellentesque, pretium quam sed, commodo lacus.
+                              </ul>
+                            </li>
+                            <li>Donec vel metus id tellus eleifend egestas volutpat eget purus.</li>
+                            <li>Vestibulum gravida enim in pellentesque elementum</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article id="text-wet" class="row my-4">
+                    <div class="col-md-12">
+                      <h3>Wettelijke opdrachten</h3>
+                      <ul>
+                        <li>Morbi rhoncus leo a massa commodo dapibus.</li>
+                        <li>In eleifend magna vitae tempus scelerisque.</li>
+                        <li>In pharetra nisl sed mauris tristique euismod.</li>
+                        <li>Duis congue risus ut pretium ultrices.</li>
+                      </ul>
+                    </div>
+                  </article>
+
+                </div>
+              </section>
             </div>
           </div>
-
-          <article>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="img-service overlay-image">
-                      <a role="button" tabindex="0" onclick=""><img class="img-fluid" src="afbeeldingen/accountancy.jpg"
-                          alt="accountancy" />
-                        <div class="centered ">
-                          <div class="overlay-text"> Accountancy</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-3  mb-3">
-                    <div class="img-service overlay-image">
-                      <a role="button" tabindex="0" onclick=""><img class="img-fluid" src="afbeeldingen/fiscaliteit.jpg"
-                          alt="accountancy" />
-                        <div class="centered ">
-                          <div class="overlay-text"> Fiscaliteit</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="img-service overlay-image">
-                      <a role="button" tabindex="0" onclick=""><img class="img-fluid" src="afbeeldingen/advies.jpg"
-                          alt="accountancy" />
-                        <div class="centered ">
-                          <div class="overlay-text"> Financieel &amp; juridisch advies</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="img-service overlay-image">
-                      <a role="button" tabindex="0" onclick=""><img class="img-fluid"
-                          src="afbeeldingen/wettelijke-opdrachten.jpg" alt="accountancy" />
-                        <div class="centered ">
-                          <div class="overlay-text"> Wettelijke opdrachten</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
         </div>
-      </section>
-
+      </article>
     </div>
   </main>
 
+  <footer class="footer py-5 ">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p><img src="afbeeldingen/Logo_inacc.png" id="footer-logo" alt="Logo Inacc" width="220"></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Adres</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quaerat magni est harum
+              similique error
+              tenetur. Ratione quam animi aut quos est nobis excepturi, molestiae aliquam odio deserunt
+              ullam nam!</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Gegevens</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quaerat magni est harum
+              similique error
+              tenetur. Ratione quam animi aut quos est nobis excepturi, molestiae aliquam odio deserunt
+              ullam nam!</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-12">
+            <span class="text-muted">
+              Boekhouders op Mensenmaat
+              <div class="pull-right">
+                <a href="">Privacy</a> | <a href="">Terms and Conditions</a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <p class="copyright m-0">
+          &copy; 2020 Inacc
+        </p>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -121,6 +274,30 @@
       $('body').css('padding-top', $('nav').outerHeight());
     }
     $(document).ready(onHeaderResize);
+  </script>
+
+  <script>
+    function showingDiv(div) {
+      resetDivs();
+      changeStatusDiv(div, 'show');
+    }
+
+    function changeStatusDiv(div, status) {
+      if (status == "show") {
+        document.getElementById(div).style.display = 'block';
+      } else if (status == "hide") {
+        document.getElementById(div).style.display = 'none';
+      }
+    }
+
+    function resetDivs() {
+      changeStatusDiv("text-acc", "hide");
+      changeStatusDiv("text-fisc", "hide");
+      changeStatusDiv("text-advies", "hide");
+      changeStatusDiv("text-wet", "hide");
+    }
+
+    document.addEventListener("load", resetDivs());
   </script>
 </body>
 
