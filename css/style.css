@@ -43,16 +43,6 @@ a:visited,
 .navbar-light .navbar-nav .nav-link:hover {
   color: #4d699d;
 }
-/*
-.logo_container {
-  margin-top: 20px;
-}
-
-.navbar-toggle {
-  //(80px - button height 34px) / 2 = 23px
-  margin-top: 23px;
-  padding: 9px 10px !important;
-}*/
 
 #mainNav .nav-link {
   font-size: 15px;
@@ -85,20 +75,6 @@ a:visited,
 #mainNav * {
   transition: all 0.4s ease;
 }
-/*
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 0.25rem;
-}
-
-.toggle-left {
-  float: right;
-  margin-left: 330px;
-}*/
 
 h1 {
   text-transform: uppercase;
@@ -111,8 +87,6 @@ h1 {
 ======================================*/
 
 .intro {
-  /*  height: 60vh;*/
-
   color: #fff;
   background-color: black;
   padding: 0;
@@ -148,17 +122,9 @@ h1 {
   font-family: "Montserrat Alternates", sans-serif;
   line-height: 40px;
 }
-/*
-.intro-content {
-  margin-top: 100px;
-}
-*/
+
 .intro-title {
-  /* text-transform: uppercase; */
   font-size: 125px;
-  /*font-weight: 800;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif; */
 }
 
 @media (max-width: 550px), (max-height: 550px) {
