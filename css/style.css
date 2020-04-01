@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400&display=swap");
 
+[id]::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
 html,
 body {
   height: 100%;
@@ -63,7 +71,7 @@ a:visited,
     z-index: 1030;
     padding-top: 10px;
     padding-bottom: 10px;
-  }  
+  }
 
   .scrolled #mainNav .navbar-brand img {
     height: 50px;

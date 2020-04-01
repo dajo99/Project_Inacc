@@ -1,24 +1,27 @@
-let $body;
-
-function windowResize() {
-    if (window.matchMedia('(min-width: 768px)').matches) {
-        $body.css('padding-top', $('#mainNav').outerHeight());
-    } else {
-        $body.css('padding-top', 0);
-    }
-}
-
 $(function () {
-    $body = $('body');
-
-    // windowResize();
-    // $(window).resize(windowResize);
-
     $(window).scroll(function () {
         if ($(window).scrollTop() > 20) {
-            $body.addClass('scrolled');
+            $('body').addClass('scrolled');
         } else {
-            $body.removeClass('scrolled');
+            $('body').removeClass('scrolled');
         }
+    });
+
+    let hash = location.hash;
+
+    $(window).on('hashchange load', function (event) {
+        if (hash) {
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 'slow', function () {
+                location.hash = hash;
+            });
+        }
+    });
+
+    $('a[href*="#"]').click(function (e) {
+        e.preventDefault();
+        hash = this.hash;
+        $(window).trigger('hashchange');
     });
 });
