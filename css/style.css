@@ -163,7 +163,7 @@ footer hr {
 //--//-->   CONTACT
 ======================================*/
 
-#contact-image-1 {
+#contact-image-1 div {
   background: url("../afbeeldingen/kantoor-inacc-1.jpg") no-repeat center;
   background-size: cover;
 }
