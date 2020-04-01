@@ -15,6 +15,7 @@
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/style_links.css" rel="stylesheet" type="text/css">
+   
 
 </head>
 
@@ -32,9 +33,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#about">Over Inacc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Over Inacc</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Onze services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Links</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#contact">Links</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -50,18 +51,57 @@
     </header>
     <main>
         <div class="container-fluid">
-            <div class="container">
+            <div class="container ">
                 <br>
                 <p></p>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Non deposit</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non deposit quid</a> 
-                        <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non deposit quid</a>
-                        <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non deposit quid</a>
-                        <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non deposit quid</a>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="dropdown">
+                        <button onclick="myFunction1()" class="dropbtn">Non deposit</button>
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                        </div>
                     </div>
                 </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="dropdown">
+                        <button onclick="myFunction2()" class="dropbtn">Non deposit</button>
+                        <div id="myDropdown2" class="dropdown-content">
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="dropdown">
+                        <button onclick="myFunction3()" class="dropbtn">Non deposit</button>
+                        <div id="myDropdown3" class="dropdown-content">
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                            <a href="#"><span style="font-weight: bold; color: #4d699d;"> > </span>Epsum factorial non
+                                deposit quid</a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <br>
             </div>
 
@@ -115,7 +155,7 @@
         </div>
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --><i class="fas fa-chevron-circle-right"></i>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
@@ -127,8 +167,16 @@
 
         /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+        function myFunction1() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+        }
+
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show");
+        }
+
+        function myFunction3() {
+            document.getElementById("myDropdown3").classList.toggle("show");
         }
 
         // Close the dropdown menu if the user clicks outside of it
