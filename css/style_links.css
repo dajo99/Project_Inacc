@@ -46,6 +46,17 @@
     display: contents;
 }
 
+.dropdown-icon{
+    float: right;
+    color: #4d699d;
+    
+}
+
+.dropdown-text{
+    font-weight: bold;
+    color: #4d699d;
+}
+
 .dropdown-content a:hover {
     color: black;
 }
