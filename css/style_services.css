@@ -24,7 +24,11 @@
     color:white;
     height: 40px;
 }
-
+.bg-img-acc{
+    background-image: url(../afbeeldingen/accountancy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .img-service{
     display: block;
     margin: 0;
@@ -52,7 +56,28 @@
     padding: 10px 8px;
     line-height: 18px;
   }
+.bg-img-acc,
+.bg-img-fisc,
+.bg-img-adv,
+.bg-img-wet
+{
+    display: block;
 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img-fisc{
+background-image: url(../afbeeldingen/fiscaliteit.jpg);
+}
+.bg-img-acc{
+    background-image: url(../afbeeldingen/accountancy.jpg);
+}
+.bg-img-adv{
+background-image: url(../afbeeldingen/advies.jpg);
+}
+.bg-img-wet{
+    background-image: url(../afbeeldingen/wettelijke-opdrachten.jpg);
+}
   .list-color{
       color: #4d699d;
       background-color: white;

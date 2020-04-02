@@ -31,6 +31,7 @@ body {
 .navbar-light .navbar-nav .nav-link:link,
 .navbar-light .navbar-nav .nav-link:visited {
   color: #444;
+  background-color: white;
 }
 
 a:link,
@@ -38,6 +39,13 @@ a:visited,
 .navbar-light .navbar-nav .active .nav-link,
 .navbar-light .navbar-nav .nav-link:hover {
   color: #4d699d;
+  background-color: white;
+}
+
+.foot-link a:link,
+.foot-link a:visited{
+  color: #4d699d;
+  background-color: #222;
 }
 
 #mainNav .nav-link {
@@ -153,10 +161,13 @@ footer {
   margin-top: auto;
   background-color: #222;
   color: #bbb;
+  font-size:90%;
 }
 
 footer h3 {
   color: #4d699d;
+  background-color: #222;
+  font-weight: bold;
 }
 
 footer hr {
