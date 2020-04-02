@@ -24,9 +24,11 @@ body {
   flex-flow: column;
 }
 
-.nav-link {
+.nav-link,
+.com-header {
   font-weight: bold;
 }
+
 
 .navbar-light .navbar-nav .nav-link:link,
 .navbar-light .navbar-nav .nav-link:visited {
@@ -167,7 +169,7 @@ footer {
 footer h3 {
   color: #4d699d;
   background-color: #222;
-  font-weight: bold;
+
 }
 
 footer hr {
@@ -177,6 +179,13 @@ footer hr {
 #footer-logo {
   filter: invert(1);
 }
+.com-header{
+  font-size: 18px;
+}
+/*.copyright{
+  text-align: right;
+}*/
+
 
 /*======================================
 //--//-->   CONTACT
