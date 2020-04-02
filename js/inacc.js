@@ -11,9 +11,10 @@ $(function () {
 
     $(window).on('hashchange load', function (event) {
         if (hash) {
+            let speed = 750 + 0.5 * ($(hash).offset().top - $(document).scrollTop());
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 1000, 'swing', function () {
+            }, speed, 'swing', function () {
                 location.hash = hash;
             });
         }
