@@ -1,5 +1,5 @@
 $(function () {
-    $(window).scroll(function () {
+    $(window).on('scroll load', function () {
         if ($(window).scrollTop() > 20) {
             $('body').addClass('scrolled');
         } else {
@@ -9,7 +9,7 @@ $(function () {
 
     let hash = location.hash;
 
-    $(window).on('hashchange load', function (event) {
+    $(window).on('hashchange load', function (e) {
         if (hash) {
             let speed = 750 + 0.5 * ($(hash).offset().top - $(document).scrollTop());
             $('html, body').animate({
