@@ -370,7 +370,14 @@
       changeStatusDiv("text-wet", "hide");
     }
 
-    document.addEventListener("load", resetDivs());
+//  document.addEventListener("load", resetDivs());
+
+    $(function(){
+      resetDivs();
+      if (location.hash) {
+        changeStatusDiv(location.hash.substring(1), "show");
+      }
+    });
   </script>
 </body>
 
