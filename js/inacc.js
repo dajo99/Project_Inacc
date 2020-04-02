@@ -13,7 +13,7 @@ $(function () {
         if (hash) {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 'slow', function () {
+            }, 1000, 'swing', function () {
                 location.hash = hash;
             });
         }

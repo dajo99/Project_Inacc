@@ -15,17 +15,13 @@ body {
 }
 
 body {
-  color: #666;
+  color: #555;
   background-color: #fff;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.7em;
   display: flex;
   flex-flow: column;
-}
-
-h3 {
-  font-size: 130%;
 }
 
 .nav-link {
@@ -82,6 +78,18 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+table.p-0 th, table.p-0 td {
+  padding: 0;
+}
+
 /*======================================
 //--//-->   INTRO
 ======================================*/
@@ -106,7 +114,7 @@ h1 {
   padding: 5rem 0;
 }
 
-.intro .overlay-intro {
+.overlay {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   position: absolute;
@@ -167,3 +175,31 @@ footer hr {
   background: url("../afbeeldingen/kantoor-inacc-1.jpg") no-repeat 10%;
   background-size: cover;
 }
+
+iframe {
+  filter: grayscale(0.7);
+  display: block;
+}
+
+#maps {
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#maps iframe {
+  margin-top: -85px;
+  width: 100%;
+  height: 525px;
+}
+
+/*
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+*/
