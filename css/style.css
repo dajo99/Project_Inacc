@@ -91,6 +91,10 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  margin-bottom: 2rem;
+}
+
 h3 {
   font-size: 1.8rem;
 }
