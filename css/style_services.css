@@ -24,11 +24,7 @@
     color:white;
     height: 40px;
 }
-.bg-img-acc{
-    background-image: url(../afbeeldingen/accountancy.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .img-service{
     display: block;
     margin: 0;
