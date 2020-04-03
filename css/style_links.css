@@ -9,7 +9,7 @@
     border: none;
     cursor: pointer;
     width: 900px;
-    text-align: left;
+    text-align: middle;
     position: relative;
 }
 
@@ -23,10 +23,11 @@
     position: relative;
     display: inline-block;
     background-color: white;
+    color: #4d699d;
 }
 
 .dropdown .fa {
-    color: #4d699d;
+
     position: absolute;
     top: 0;
     right: 0;
