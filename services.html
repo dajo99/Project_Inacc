@@ -15,7 +15,6 @@
   <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="css/style_services.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ecadc53a85.js" crossorigin="anonymous"></script>
 </head>
 
@@ -264,59 +263,31 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p class="mb-0"><img src="afbeeldingen/Logo_inacc.png" id="footer-logo" alt="Logo Inacc" width="220"></p>
+          <div class="col-md-6 mb-sm-4">
+            <p class="mb-0"><img src="afbeeldingen/Logo-inacc.png" id="footer-logo" alt="Logo Inacc" width="220"></p>
           </div>
-          <div class="col-md-6 pt-4 pt-md-0">
-            <div class="row">
-              <div class="col-md-12 mb-1">
-                <h3>Contacteer Ons</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 col-sm-6 mb-0">
-                <span class="com-header ml-md-2">Geel</span><br>
-                <ul class="mb-md-0 fa-ul ml-0">
-                  <li><span class="fa-li"><i class="fas fa-building"></i></span>Diestseweg 32B</li>
-                  <li><span class="fa-li"><i class="fas fa-road"></i></span>2440 Geel</li>
-                  <li><span class="fa-li"><i class="fas fa-phone-alt"></i></span>014/57 04 60</li>
-                  <li><span class="fa-li"><i class="fas fa-fax"></i></span>014/57 04 69</li>
-                  <li class="foot-link"><span class="fa-li"><i class="far fa-envelope"></i></span><a
-                      href="mailto:info@inacc.be">info@inacc.be</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <span class="com-header ml-md-2">Lichtaart</span><br>
-                <ul class="mb-md-0 fa-ul ml-0">
-                  <li><span class="fa-li"><i class="fas fa-building"></i></span>Herentalsesteenweg 22</li>
-                  <li><span class="fa-li"><i class="fas fa-road"></i></span>2460 Lichtaart</li>
-                  <li><span class="fa-li"><i class="fas fa-phone-alt"></i></span>014/40 50 39</li>
-                  <li><span class="fa-li"><i class="fas fa-fax"></i></span>014/40 50 39</li>
-                  <li class="foot-link"><span class="fa-li"><i class="far fa-envelope"></i></span><a
-                      href="mailto:lichtaart@inacc.be">lichtaart@inacc.be</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <span class="com-header ml-md-2">Antwerpen</span><br>
-                <ul class="mb-md-0 fa-ul ml-0">
-                  <li><span class="fa-li"><i class="fas fa-building"></i></span>Herentalsesteenweg 22</li>
-                  <li><span class="fa-li"><i class="fas fa-road"></i></span>2460 Lichtaart</li>
-                  <li><span class="fa-li"><i class="fas fa-phone-alt"></i></span>014/40 50 39</li>
-                  <li><span class="fa-li"><i class="fas fa-fax"></i></span>014/40 50 39</li>
-                  <li class="foot-link"><span class="fa-li"><i class="far fa-envelope"></i></span><a
-                      href="mailto:lichtaart@inacc.be">lichtaart@inacc.be</a></li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-md-3 mb-md-0 ">
+            <h3>Adres</h3>
+            <p>Diestseweg 32B<br>
+              2440 Geel</p>
+          </div>
+          <div class="col-md-3 pb-0">
+            <h3>Gegevens</h3>
+            <ul class="mb-md-0 fa-ul ml-4">
+              <li><span class="fa-li"><i class="fas fa-phone-alt"></i></span>014/57 04 60</li>
+              <li><span class="fa-li"><i class="fas fa-fax"></i></span>014/57 04 69</li>
+              <li class="foot-link "><span class="fa-li"><i class="far fa-envelope"></i></span><a
+                  href="mailto:info@inacc.be">info@inacc.be</a></li>
+            </ul>
           </div>
         </div>
 
-        <hr>
+        <hr class="my-3 mb-2">
 
         <div class="row">
 
           <div class="col-md-4 ">
-            <div class="mb-0 text-muted pull-right">
+            <div class="mb-0 text-muted">
               <p>
                 Inacc BV is erkend op het tableau van erkende boekhouders &amp; fiscalisten BIBF onder het nummer
                 0893818970
@@ -341,6 +312,7 @@
         </div>
       </div>
   </footer>
+
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -370,9 +342,9 @@
       changeStatusDiv("text-wet", "hide");
     }
 
-//  document.addEventListener("load", resetDivs());
+    //  document.addEventListener("load", resetDivs());
 
-    $(function(){
+    $(function () {
       resetDivs();
       if (location.hash) {
         changeStatusDiv(location.hash.substring(1), "show");
