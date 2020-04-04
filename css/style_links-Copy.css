@@ -1,0 +1,107 @@
+.container-self {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 992px) {
+    .container-self {
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+}
+
+.accordion button {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    height: 70px;
+}
+
+.accordion button:focus {
+    outline: 0;
+    box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion .dropdown-toggle::after {
+    display: none;
+}
+
+.accordion .ico-pos {
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.accordion button.collapsed .fas:before {
+    content: "\f053";
+}
+
+.accordion .accordion-content a {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.accordion .accordion-content a,
+.accordion .accordion-content a:hover,
+.accordion .accordion-content a:focus {
+    color: black;
+    background-color: white;
+}
+
+.accordion .accordion-content a .dropdown-text {
+    display: inline-block;
+    position: relative;
+    padding: 0.25rem 0;
+    font-weight: bold;
+}
+
+.accordion .accordion-content a .dropdown-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.1px;
+    bottom: 0;
+    background-color: #4d699d;
+    color: black;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.accordion .accordion-content {
+    width: 100%;
+    border: none;
+}
+
+.accordion .accordion-content a:hover .dropdown-text:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.accordion .accordion-content .dropdown-item {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accordion .accordion-content .dropdown-item .fa-li {
+    left: -2.2em;
+}
+
+.list-color {
+    color: #4d699d;
+    background-color: white;
+}
