@@ -9,6 +9,11 @@
   visibility: hidden;
 }
 
+.no-anchor-fix [id]::before {
+  height: initial;
+  margin-top: initial;
+}
+
 html,
 body {
   height: 100%;
