@@ -151,7 +151,6 @@ a:hover:before {
     margin: auto;
     display: none;
     position: relative;
-    background-color: transparent;
     z-index: 1;
 }
 .dropdown-text {
@@ -163,10 +162,6 @@ a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-}
-.dropdown-content a:hover {
-    color: black;
-    background-color: white;
 }
 .dropdown-content a {
     position: relative;

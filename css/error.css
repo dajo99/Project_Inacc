@@ -6,64 +6,71 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: 30px;
-    
+
 }
+
 .number {
     font-family: 'Inconsolata', monospace;
     color: white;
+    background-color: transparent;
     font-size: 200px;
     line-height: 0.9;
 }
 
 
-.regel{
-    
+.regel {
+    background-color: transparent;
     color: white;
     font-size: 20px;
-    
+
 }
 
 
-.button{
+.button {
     background-color: transparent !important;
     color: white !important;
+
 }
 
 
-@media (min-width: 700px){
-    
+@media (min-width: 700px) {
+
     .tekst {
         padding-top: 35px;
     }
+
     .number {
         font-size: 305px;
     }
-    .regel{
-        font-size: 30px;    
+
+    .regel {
+        font-size: 30px;
     }
-    
-    
-    
-    .padding-sm {
+
+
+
+    /*.padding-sm {
         padding: rem;
-    }
+    }*/
 }
 
-@media (min-width: 900px){
-    
+@media (min-width: 900px) {
+
     .tekst {
         padding-top: 0px;
     }
+
     .number {
         font-size: 425px;
     }
-    .regel{
-        font-size: 40px;    
+
+    .regel {
+        font-size: 40px;
     }
-    
-    
-    
+
+
+
     .padding-sm {
         padding: 2rem;
-}
+    }
 }
