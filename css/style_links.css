@@ -1,4 +1,4 @@
-.dropbtn {
+/*.dropbtn {
     background-color: transparent;
     color: black;
     box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
@@ -9,7 +9,7 @@
     border: none;
     cursor: pointer;
     width: 900px;
-    text-align: middle;
+    text-align: left;
     position: relative;
 }
 
@@ -23,19 +23,19 @@
     position: relative;
     display: inline-block;
     background-color: white;
-    color: #4d699d;
 }
 
 .dropdown .fa {
-
+    color: #4d699d;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 0;
-    display: -webkit-box;
+    display: -webkit-box;*/
     /* Safari */
+/*
     display: flex;
     justify-content: center;
 
@@ -96,4 +96,104 @@ a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+*/
+
+.btn-style{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    height: 70px;
+}
+
+
+.btn-style:focus {
+    outline: 0;
+    box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
+}
+.container-self{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.ico-pos{
+    margin-right: 5px;
+    padding-top: 5px;
+}
+.dropdown-content a:before {
+    content: "";
+    position: absolute;
+    width:23%;
+    height: 2.1px;
+    bottom: 0;
+    background-color: #4d699d;
+    color:black;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.dropdown-content a:hover {
+    color: black;
+    background-color: white;
+}
+
+.dropdown-content {
+    margin: auto;
+    display: none;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+}
+.dropdown-text {
+    font-weight: bold;
+    color: #4d699d;
+    background-color: white;
+}
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.dropdown-content a:hover {
+    color: black;
+    background-color: white;
+}
+.dropdown-content a {
+    position: relative;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+.dropdown-menu{
+    border: none;
+}
+.show {
+    display: contents;
+}
+.list-color{
+    color: #4d699d;
+    background-color: white;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 992px) {
+    .container-self{
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+
 }
