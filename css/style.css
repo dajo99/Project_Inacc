@@ -9,7 +9,7 @@
   visibility: hidden;
 }
 
-.no-anchor-fix [id]::before {
+.no-fix-anchors [id]::before {
   height: initial;
   margin-top: initial;
 }
