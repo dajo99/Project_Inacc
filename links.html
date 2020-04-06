@@ -66,10 +66,12 @@
                 <article class="row">
                     <div class="col-md-12 mb-3">
                         <div class="dropdown">
-                            <button onclick="myFunction1()" class="btn dropdown-toggle btn-style test1" type="button"
+                            <button onclick="myFunction1()" class="btn dropdown-toggle btn-style test1 btn1" type="button"
                                 id="dropdownMenuButton1" aria-haspopup="true" aria-expanded="false">
                                 Dropdown button
-                                <div id="arrow" class="arrow-down pull-right" ></div>
+                                <a href="#">
+                                    <div class="fa fa-chevron-left rotate1 pull-right ico-pos test1"></div>
+                                </a>
                             </button>
                             <div id="myDropdown1" class="dropdown-menu dropdown-content my-3"
                                 aria-labelledby="dropdownMenuButton1">
@@ -94,10 +96,12 @@
                 <article class="row">
                     <div class="col-md-12 mb-3">
                         <div class="dropdown">
-                            <button onclick="myFunction2()" class="btn test1 dropdown-toggle btn-style" type="button"
+                            <button onclick="myFunction2()" class="btn test1 dropdown-toggle btn-style btn2" type="button"
                                 id="dropdownMenuButton2" aria-haspopup="true" aria-expanded="false">
                                 Dropdown button
-                                <i class="fas test1 fa-chevron-left pull-right ico-pos list-color"></i>
+                                <a href="#">
+                                    <div class="fa fa-chevron-left rotate2 pull-right ico-pos test1"></div>
+                                </a>
                             </button>
                             <div id="myDropdown2" class="dropdown-menu dropdown-content my-3"
                                 aria-labelledby="dropdownMenuButton2">
@@ -122,10 +126,12 @@
                 <article class="row">
                     <div class="col-md-12  mb-4">
                         <div class="dropdown">
-                            <button onclick="myFunction3()" class="btn test1 dropdown-toggle btn-style" type="button"
+                            <button onclick="myFunction3()" class="btn test1 dropdown-toggle btn-style btn3" type="button"
                                 id="dropdownMenuButton3" aria-haspopup="true" aria-expanded="false">
                                 Dropdown button
-                                <i class="fas test1 fa-chevron-left pull-right ico-pos list-color"></i>
+                                <a href="#">
+                                    <div class="fa fa-chevron-left rotate3 pull-right ico-pos test1"></div>
+                                </a>
                             </button>
                             <div id="myDropdown3" class="dropdown-menu dropdown-content my-3"
                                 aria-labelledby="dropdownMenuButton3">
@@ -223,8 +229,7 @@
 toggle between hiding and showing the dropdown content */
         function myFunction1() {
             document.getElementById("myDropdown1").classList.toggle("show");
-            var element = document.getElementsByClassName("arrow-down");
-            element.classList.toggle("active");
+            
         }
 
         function myFunction2() {
@@ -235,6 +240,18 @@ toggle between hiding and showing the dropdown content */
         function myFunction3() {
             document.getElementById("myDropdown3").classList.toggle("show");
         }
+
+        $(".btn1").click(function () {
+            $(".rotate1").toggleClass("down");
+        })
+
+        $(".btn2").click(function () {
+            $(".rotate2").toggleClass("down");
+        })
+
+        $(".btn3").click(function () {
+            $(".rotate3").toggleClass("down");
+        })
 
         // Close the dropdown menu if the user clicks outside of it
         window.onclick = function (event) {

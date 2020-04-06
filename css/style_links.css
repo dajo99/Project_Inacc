@@ -1,104 +1,3 @@
-/*.dropbtn {
-    background-color: transparent;
-    color: black;
-    box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    padding: 16px;
-    margin: 19px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 900px;
-    text-align: left;
-    position: relative;
-}
-
-.dropbtn:focus {
-    outline: 0;
-}
-
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    background-color: white;
-}
-
-.dropdown .fa {
-    color: #4d699d;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    display: -webkit-box;*/
-/* Safari */
-/*
-    display: flex;
-    justify-content: center;
-
-
-}
-
-
-.dropdown-content {
-    margin: auto;
-    display: none;
-    position: relative;
-    background-color: transparent;
-    z-index: 1;
-}
-
-
-.dropdown-content a {
-    position: relative;
-    color: black;
-    padding: 4px 30px;
-    text-decoration: none;
-    display: block;
-
-}
-
-
-
-.show {
-    display: contents;
-}
-
-
-.dropdown-text {
-    font-weight: bold;
-    color: #4d699d;
-}
-
-.dropdown-content a:hover {
-    color: black;
-}
-
-.dropdown-content a:before {
-    content: "";
-    position: absolute;
-    width: 23%;
-    height: 2px;
-    bottom: 0;
-    left: 10;
-    background-color: #53565e;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-*/
-
 .btn-style {
     background-color: white;
     color: black;
@@ -166,6 +65,7 @@ a:hover:before {
 .dropdown-content {
     position: relative;
     width: 100%;
+    background: transparent;
 }
 
 .dropdown-content a:hover .dropdown-text:before {
@@ -192,55 +92,35 @@ a:hover:before {
     background-color: white;
 }
 
-.arrow-down {
-  width: 50px;
-  height: 50px;
-  background: red;
-  position: relative;
+.rotate1 {
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.rotate1.down {
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
 }
 
-.arrow-down.active {
-  background: blue;
+.rotate2 {
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.rotate2.down {
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
 }
 
-.arrow-down:before, .arrow-down:after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 5px;
-  background: white;
-  position: absolute;
-  top: 20px;
-  transition: transform .5s;
+.rotate3 {
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
 }
-
-.arrow-down:before {
-  right: 21px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  transform: rotate(45deg);
-}
-
-.arrow-down:after {
-  right: 10px;
-  transform: rotate(-45deg);
-}
-
-.arrow-down.active:before {
-  transform: rotate(-45deg);
-}
-
-.arrow-down.active:after {
-  transform: rotate(45deg);
-}
-@media (min-width: 576px) {
-}
-@media (min-width: 768px) {
-}
-@media (max-width: 992px) {
-    .container-self {
-        width: 80%;
-    }
-}
-@media (max-width: 1200px) {
+.rotate3.down {
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform:rotate(-90deg);
 }
