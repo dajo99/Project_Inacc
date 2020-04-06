@@ -69,31 +69,22 @@
                             <button onclick="myFunction1()" class="btn dropdown-toggle btn-style test1" type="button"
                                 id="dropdownMenuButton1" aria-haspopup="true" aria-expanded="false">
                                 Dropdown button
-                                <i class="fas test1 fa-chevron-left pull-right ico-pos list-color"></i>
+                                <div id="arrow" class="arrow-down pull-right" ></div>
                             </button>
                             <div id="myDropdown1" class="dropdown-menu dropdown-content my-3"
                                 aria-labelledby="dropdownMenuButton1">
                                 <ul>
                                     <li><a class="dropdown-item" href="#"><span class="dropdown-text">Action</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                                class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Another action</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Another
+                                                action</span><span class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Something else here</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
-                                        <ul>
-                                            <li><a class="dropdown-item" href="#"><span class="dropdown-text">Action</span><span
-                                                class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#"><span class="dropdown-text">Another action</span><span
-                                                class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="#"><span class="dropdown-text">Something else here</span><span
-                                                class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
-                                                
-                                            </li>
-                                        </ul>
+                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Something else
+                                                here</span><span class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -112,13 +103,16 @@
                                 aria-labelledby="dropdownMenuButton2">
                                 <ul>
                                     <li><a class="dropdown-item" href="#"><span class="dropdown-text">Action</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                                class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Another action</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Another
+                                                action</span><span class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Something else here</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Something else
+                                                here</span><span class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -137,13 +131,16 @@
                                 aria-labelledby="dropdownMenuButton3">
                                 <ul>
                                     <li><a class="dropdown-item" href="#"><span class="dropdown-text">Action</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                                class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Another action</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Another
+                                                action</span><span class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Something else here</span><span
-                                        class="fa-li pl-3 list-color"><i class="fas fa-chevron-right"></i></span></a>
+                                    <li><a class="dropdown-item" href="#"><span class="dropdown-text">Something else
+                                                here</span><span class="fa-li pl-3 list-color"><i
+                                                    class="fas fa-chevron-right"></i></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -201,10 +198,10 @@
               </div>-->
                 </div>
             </div>
-                <div class="container">
-                    <p class=" copyright mb-0">
-                        &copy; 2020 Inacc
-                    </p>
+            <div class="container">
+                <p class=" copyright mb-0">
+                    &copy; 2020 Inacc
+                </p>
             </div>
         </div>
     </footer>
@@ -226,6 +223,8 @@
 toggle between hiding and showing the dropdown content */
         function myFunction1() {
             document.getElementById("myDropdown1").classList.toggle("show");
+            var element = document.getElementsByClassName("arrow-down");
+            element.classList.toggle("active");
         }
 
         function myFunction2() {
