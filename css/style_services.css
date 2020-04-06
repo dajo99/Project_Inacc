@@ -1,6 +1,5 @@
 .img-service a:hover{
     cursor: pointer;
-
 }
 .overlay-image a:hover .centered{
     background-image: url(../afbeeldingen/logo-inacc.png);
