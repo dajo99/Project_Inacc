@@ -49,3 +49,12 @@ $(function () {
         setHash(this.hash);
     });
 });
+
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        
+    }, 3000);
+ 
+});
