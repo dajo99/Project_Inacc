@@ -127,3 +127,11 @@
     -webkit-transform:rotate(-90deg);
     transform:rotate(-90deg);
 }
+
+@media (max-width: 900px){
+    .container-self{
+        width: 80%;
+        margin-right: 50px
+    }
+    
+  }
