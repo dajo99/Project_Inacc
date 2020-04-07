@@ -69,6 +69,7 @@
     position: relative;
     width: 100%;
     background: transparent;
+    color: black;
 }
 
 .dropdown-content a:hover .dropdown-text:before {
@@ -128,10 +129,15 @@
     transform:rotate(-90deg);
 }
 
+.fa-chevron-left{
+    color: #4d699d;
+    background-color: white;
+}
+
 @media (max-width: 900px){
     .container-self{
         width: 80%;
-        margin-right: 50px
+        margin-right: 50px;
     }
     
   }
