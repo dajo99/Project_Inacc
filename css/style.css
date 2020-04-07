@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400&display=swap");
 
+
 [id]::before {
   content: "";
   display: block;
@@ -12,6 +13,11 @@
 .no-fix-anchors [id]::before {
   height: initial;
   margin-top: initial;
+}
+
+#services-images {
+  position: relative;
+  z-index: 1;
 }
 
 html,
@@ -160,8 +166,7 @@ table.p-0 td {
   font-size: 125px;
 }
 
-@media (max-width: 550px),
-(max-height: 550px) {
+@media (max-width: 550px), (max-height: 550px) {
   .intro-title {
     font-size: 60px;
   }
@@ -241,7 +246,6 @@ iframe {
 }
 */
 
-
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -268,8 +272,6 @@ iframe {
 
   z-index: 1001;
 }
-
-
 
 #loader:after {
   content: "";
@@ -340,8 +342,8 @@ iframe {
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 
-  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
@@ -349,8 +351,8 @@ iframe {
   -ms-transform: translateX(100%);
   transform: translateX(100%);
 
-  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader {
