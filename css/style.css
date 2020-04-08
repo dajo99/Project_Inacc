@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&family=Oswald&family=Play&display=swap');
 
 
 [id]::before {
@@ -28,8 +29,8 @@ body {
 body {
   color: #555;
   background-color: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'Play', "Open Sans", Arial, sans-serif;
+  font-size: 15px;
   line-height: 1.7em;
   display: flex;
   flex-flow: column;
@@ -98,11 +99,15 @@ a:visited,
 
 h1 {
   text-transform: uppercase;
+  font-size: 50px;
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
 }
 
 h2 {
+  font-family: 'Oswald', 'EB Garamond', sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
   margin-bottom: 2rem;
 }
 
@@ -166,7 +171,8 @@ table.p-0 td {
   font-size: 125px;
 }
 
-@media (max-width: 550px), (max-height: 550px) {
+@media (max-width: 550px),
+(max-height: 550px) {
   .intro-title {
     font-size: 60px;
   }
