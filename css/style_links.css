@@ -97,9 +97,9 @@
 }
 
 .rotate1 {
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
 }
 .rotate1.down {
     -moz-transform:rotate(-90deg);
@@ -108,9 +108,9 @@
 }
 
 .rotate2 {
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
 }
 .rotate2.down {
     -moz-transform:rotate(-90deg);
@@ -119,9 +119,9 @@
 }
 
 .rotate3 {
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
 }
 .rotate3.down {
     -moz-transform:rotate(-90deg);
