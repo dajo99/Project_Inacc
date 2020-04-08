@@ -60,7 +60,8 @@ a:visited,
   background-color: #222;
 }
 
-#mainNav .navbar-brand img {
+#mainNav .navbar-brand img,
+#mainNav .nav-link {
   transition: all .4s ease;
 }
 
