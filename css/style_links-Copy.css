@@ -1,3 +1,4 @@
+/*
 .container-self {
     width: 60%;
     margin-left: auto;
@@ -15,7 +16,7 @@
 }
 @media (max-width: 1200px) {
 }
-
+*/
 .accordion button {
     background-color: white;
     color: black;
@@ -27,6 +28,8 @@
     text-align: left;
     position: relative;
     height: 70px;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
 }
 
 .accordion button:focus {
@@ -38,13 +41,15 @@
     display: none;
 }
 
-.accordion .ico-pos {
-    margin-right: 10px;
-    padding-top: 5px;
+.accordion button .fas {
+    transform: rotate(0deg);
+    transition: transform .35s ease;
+    vertical-align: middle;
+    line-height: inherit;
 }
 
-.accordion button.collapsed .fas:before {
-    content: "\f053";
+.accordion button.collapsed .fas {
+    transform: rotate(90deg);
 }
 
 .accordion .accordion-content a {
@@ -58,6 +63,13 @@
 .accordion .accordion-content a:focus {
     color: black;
     background-color: white;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+.accordion .accordion-content a:hover,
+.accordion .accordion-content a:focus {
+    color: #4d699d;
 }
 
 .accordion .accordion-content a .dropdown-text {
@@ -84,6 +96,10 @@
 .accordion .accordion-content {
     width: 100%;
     border: none;
+}
+
+.accordion ul {
+    margin-bottom: 0;
 }
 
 .accordion .accordion-content a:hover .dropdown-text:before {
