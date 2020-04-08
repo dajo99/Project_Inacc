@@ -97,4 +97,15 @@ background-image: url(../afbeeldingen/advies.jpg);
     }
   }
 
+  .mobileShow {display: none;}
+  .pcShow {display: flex;}
+
+  /* Smartphone */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+      .pcShow {display: none;}
+  }
+
 
