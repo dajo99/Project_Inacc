@@ -313,8 +313,8 @@ input[type=checkbox]
   border: 3px solid transparent;
   border-top-color: #4d699d;
 
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 
   z-index: 1001;
 }
@@ -330,8 +330,8 @@ input[type=checkbox]
   border: 3px solid transparent;
   border-top-color: #4d699d;
 
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 1.0s linear infinite;
+  animation: spin 1.0s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -388,8 +388,8 @@ input[type=checkbox]
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 
-  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.4s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
@@ -397,14 +397,14 @@ input[type=checkbox]
   -ms-transform: translateX(100%);
   transform: translateX(100%);
 
-  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.4s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader {
   opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .loaded #loader-wrapper {
