@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&family=Oswald&family=Play&display=swap');
 
-
 [id]::before {
   content: "";
   display: block;
@@ -106,9 +105,9 @@ h1 {
 
 h2 {
   font-family: 'Oswald', 'EB Garamond', sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   letter-spacing: 1px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -190,12 +189,13 @@ footer {
   margin-top: auto;
   background-color: #222;
   color: #bbb;
-  font-size: 90%;
+  font-size: 95%;
 }
 
-footer h3 {
+footer h2 {
   color: #4d699d;
   background-color: #222;
+  margin-bottom: .5rem;
 }
 
 footer hr {
