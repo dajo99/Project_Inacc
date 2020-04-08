@@ -98,7 +98,7 @@ background-image: url(../afbeeldingen/advies.jpg);
   }
 
   .mobileShow {display: none;}
-  .pcShow {display: inline;}
+  .pcShow {display: flex;}
 
   /* Smartphone */
   @media only screen
