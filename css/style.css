@@ -106,7 +106,7 @@ h1 {
 
 h2 {
   font-family: 'Oswald', 'EB Garamond', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
@@ -241,8 +241,48 @@ iframe {
   /*  height: 535px;*/
 }
 
-/*
-@media (min-width: 576px) {
+/*FORM*/
+input[type=text]:focus,
+textarea:focus,
+input[type=email]:focus,
+.form-group textarea:focus {
+box-shadow: 0 0 0 2.1px #ccc;
+border: 1px solid #ccc; 
+}
+/*.cb-style{
+  width: 15px;
+  height: 15px;
+}*/
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  margin-top: 8px;
+  left: 23px;
+
+}
+
+/* Might want to wrap a span around your checkbox text */
+.checkboxtext
+{
+  /* Checkbox text */
+  font-size: 110%;
+  display: inline;
+}
+
+
+
+@media (max-width: 576px) {
+  #form1{
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 @media (min-width: 768px) {
 }
@@ -250,7 +290,7 @@ iframe {
 }
 @media (min-width: 1200px) {
 }
-*/
+
 
 #loader-wrapper {
   position: fixed;
