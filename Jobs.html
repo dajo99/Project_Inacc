@@ -52,15 +52,15 @@
         </div>
     </header>
 
-    <main>
+    <main class="jobs">
+        <div class="btn-group ">
+            <button onclick="geel()" class="btn">Inacc Geel</button>
+            <button onclick="lichtaart()" class="btn">Inacc Lichtaart</button>
+            <button onclick="antwerpen()" class="btn">kantoor Antwerpen</button>
+        </div>
         <div class="container jobs ">
-            <div class="btn-group ">
-                <button onclick="geel()" class="btn">Inacc Geel</button>
-                <button onclick="lichtaart()" class="btn">Inacc Lichtaart</button>
-                <button onclick="antwerpen()" class="btn">kantoor Antwerpen</button>
-            </div>
 
-            <div id="geel" class="collapse" style="display: none;">
+            <div id="geel" style="display: none;">
                 <h2>Vacature1</h2>
                 <p>tekst</p>
                 <br>
@@ -221,14 +221,7 @@
             }
         }
 
-        $(window).mouseup(function (e) {
-            var container = $("#geel");
-
-            // If the target of the click isn't the container
-            if (!container.is(e.target) && container.has(e.target).length === 0) {
-                container.hide();
-            }
-        });
+       
     </script>
 
 
