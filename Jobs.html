@@ -55,12 +55,59 @@
     <main>
         <div class="container jobs ">
             <div class="btn-group ">
-                <button class="btn">Inacc Geel</button>
-                <button class="btn">Inacc Lichtaart</button>
-                <button class="btn">kantoor Antwerpen</button>
-              </div>
-    
+                <button onclick="geel()" class="btn">Inacc Geel</button>
+                <button onclick="lichtaart()" class="btn">Inacc Lichtaart</button>
+                <button onclick="antwerpen()" class="btn">kantoor Antwerpen</button>
+            </div>
+
+            <div id="geel" class="collapse" style="display: none;">
+                <h2>Vacature1</h2>
+                <p>tekst</p>
+                <br>
+
+                <h2>Vacature2</h2>
+                <p>tekst</p>
+                <br>
+
+                <h2>Vacature3</h2>
+                <p>tekst</p>
+                <br>
+
+            </div>
+
+            <div id="lichtaart" style="display: none;">
+                <h2>Vacature4</h2>
+                <p>tekst</p>
+                <br>
+
+                <h2>Vacature5</h2>
+                <p>tekst</p>
+                <br>
+
+                <h2>Vacature6</h2>
+                <p>tekst</p>
+                <br>
+
+            </div>
+
+            <div id="antwerpen" style="display: none;">
+                <h2>Vacature7</h2>
+                <p>tekst</p>
+                <br>
+
+                <h2>Vacature8</h2>
+                <p>tekst</p>
+                <br>
+
+                <h2>Vacature9</h2>
+                <p>tekst</p>
+                <br>
+
+            </div>
+
         </div>
+
+
     </main>
 
     <footer class="footer py-4">
@@ -129,7 +176,62 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/inacc.js"></script>
     <script src="https://kit.fontawesome.com/ecadc53a85.js" crossorigin="anonymous"></script>
-    
+
+    <script>
+        function geel() {
+            var geel = document.getElementById("geel");
+            var lichtaart = document.getElementById("lichtaart");
+            var antwerpen = document.getElementById("antwerpen");
+
+            if (geel.style.display === "none") {
+                geel.style.display = "block";
+                lichtaart.style.display = "none";
+                antwerpen.style.display = "none";
+
+            } else {
+                geel.style.display = "none";
+            }
+        }
+
+        function lichtaart() {
+            var geel = document.getElementById("geel");
+            var lichtaart = document.getElementById("lichtaart");
+            var antwerpen = document.getElementById("antwerpen");
+            if (lichtaart.style.display === "none") {
+                lichtaart.style.display = "block";
+                geel.style.display = "none";
+                antwerpen.style.display = "none";
+
+            } else {
+                geel.style.display = "none";
+            }
+        }
+
+        function antwerpen() {
+            var geel = document.getElementById("geel");
+            var lichtaart = document.getElementById("lichtaart");
+            var antwerpen = document.getElementById("antwerpen");
+            if (antwerpen.style.display === "none") {
+                antwerpen.style.display = "block";
+                geel.style.display = "none";
+                lichtaart.style.display = "none";
+
+            } else {
+                antwerpen.style.display = "none";
+            }
+        }
+
+        $(window).mouseup(function (e) {
+            var container = $("#geel");
+
+            // If the target of the click isn't the container
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.hide();
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
