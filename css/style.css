@@ -4,6 +4,14 @@
 
 /* --- TEAM --- */
 
+.people .row {
+  margin-top: -5rem;
+}
+
+.people .row:first-child {
+  margin-top: 0;
+}
+
 .image-overlay {
   position: relative;
 }
@@ -232,20 +240,20 @@ table.p-0 td {
 /*======================================
 //--//-->   FOOTER
 ======================================*/
-footer {
+.footer {
   margin-top: auto;
   background-color: #222;
   color: #bbb;
   font-size: 95%;
 }
 
-footer h2 {
+.footer h2 {
   color: #4d699d;
   background-color: #222;
   margin-bottom: 0.5rem;
 }
 
-footer hr {
+.footer hr {
   border-color: #333;
 }
 
