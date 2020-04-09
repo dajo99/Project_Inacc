@@ -37,17 +37,20 @@
   min-height: 0.01px;
 }
 
-.card-title, .media h3 {
+.card-title,
+.media h3 {
   margin-bottom: 0.5rem;
 }
 
-.card-subtitle, .media h4 {
+.card-subtitle,
+.media h4 {
   font-size: 90%;
   color: #aaa;
   margin-top: 0;
 }
 
-.card p, .media p {
+.card p,
+.media p {
   margin-top: 1rem;
 }
 
@@ -60,13 +63,24 @@
     width: 90%;
   }
 
+  .gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 15rem);
+    background-attachment: fixed;
+  }
+
   .people .row {
     margin-top: -7rem;
   }
-  
+
   .people .row:first-child {
     margin-top: 0;
   }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* --- /TEAM --- */
@@ -178,16 +192,16 @@ h2 {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 1rem;
-  transform: scaleX(.85);
+  transform: scaleX(0.85);
   transform-origin: left;
 }
-.link{
+.link {
   transform-origin: center;
 }
 
 h3 {
-  font-family: "Play", "Open Sans", Arial, sans-serif;;
-  margin-bottom: .2rem;
+  font-family: "Play", "Open Sans", Arial, sans-serif;
+  margin-bottom: 0.2rem;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -268,7 +282,7 @@ table.p-0 td {
 .footer h2 {
   color: #4d699d;
   background-color: #222;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 .footer hr {
