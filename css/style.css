@@ -23,13 +23,18 @@
   filter: grayscale(0.3);
 }
 
+.media img {
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
 .card {
   box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
-.media img {
-  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
+/* IE fix */
+.card * {
+  min-height: 0.01px;
 }
 
 .card-title, .media h3 {
