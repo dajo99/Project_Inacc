@@ -4,14 +4,6 @@
 
 /* --- TEAM --- */
 
-.people .row {
-  margin-top: -5rem;
-}
-
-.people .row:first-child {
-  margin-top: 0;
-}
-
 .image-overlay {
   position: relative;
 }
@@ -49,9 +41,21 @@
   margin-top: 1rem;
 }
 
+.people .row {
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 1200px) {
   #people {
     width: 90%;
+  }
+
+  .people .row {
+    margin-top: -5rem;
+  }
+  
+  .people .row:first-child {
+    margin-top: 0;
   }
 }
 
