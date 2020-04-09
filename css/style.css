@@ -164,18 +164,22 @@ h1 {
 }
 
 h2 {
-  font-family: "Oswald", "EB Garamond", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 25px;
-  letter-spacing: 1px;
+  font-weight: 600;
   margin-bottom: 1rem;
+  transform: scaleX(.85);
+  transform-origin: left;
+}
+.link{
+  transform-origin: center;
 }
 
 h3 {
-  font-size: 1.8rem;
-}
-
-h4 {
-  font-size: 1.2rem;
+  font-family: "Play", "Open Sans", Arial, sans-serif;;
+  margin-bottom: .2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 table.p-0 th,
@@ -254,7 +258,7 @@ table.p-0 td {
 .footer h2 {
   color: #4d699d;
   background-color: #222;
-  margin-bottom: 0.5rem;
+  margin-bottom: .2rem;
 }
 
 .footer hr {

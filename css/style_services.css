@@ -47,8 +47,7 @@
   .overlay-text{
     text-align: center;
     font-size: 16px;
-    font-weight: bold;
-    padding: 10px 8px;
+    padding: 10px 4px;
     line-height: 18px;
   }
 .bg-img-acc,
@@ -83,6 +82,10 @@ background-image: url(../afbeeldingen/advies.jpg);
     .centered {
         height: 50px;
     }
+    .overlay-text{
+        padding: 15px 1px;
+      }
+
   }
 
   @media (min-width: 900px) and (max-width:1200px){
@@ -95,6 +98,7 @@ background-image: url(../afbeeldingen/advies.jpg);
       .img-service a:hover .overlay-text{
         height: 50px;
     }
+    
   }
 
   .mobileShow {display: none;}
@@ -103,8 +107,8 @@ background-image: url(../afbeeldingen/advies.jpg);
   /* Smartphone */
   @media only screen
     and (min-device-width : 320px)
-    and (max-device-width : 480px){ 
-      .mobileShow {display: inline;}
+    and (max-device-width : 750px){ 
+      .mobileShow {display: flex;}
       .pcShow {display: none;}
   }
 
