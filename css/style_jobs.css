@@ -1,0 +1,12 @@
+.header-jobs{
+    width: 70%;
+    margin: auto;
+}
+
+.il {
+    /* border: 1px solid #FF0004; */
+    padding: 0px;
+    background-image: url(../afbeeldingen/lijn.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
