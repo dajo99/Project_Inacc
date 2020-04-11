@@ -474,7 +474,7 @@ input[type="checkbox"] {
   width: 51%;
   height: 100%;
   background: white;
-  color: black;
+  color:#555;;
   z-index: 1000;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -548,7 +548,7 @@ input[type="checkbox"] {
 .img-service a:hover .centered {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+  color: #555;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -677,7 +677,7 @@ input[type="checkbox"] {
 
 .accordion button {
   background-color: white;
-  color: black;
+  color: #555;;
   box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   font-size: 16px;
@@ -719,7 +719,7 @@ input[type="checkbox"] {
 .accordion .accordion-content a,
 .accordion .accordion-content a:hover,
 .accordion .accordion-content a:focus {
-  color: black;
+  color: #555;;
   background-color: white;
   -webkit-transition: color 0.3s ease-in-out 0s;
   transition: color 0.3s ease-in-out 0s;
@@ -744,7 +744,7 @@ input[type="checkbox"] {
   height: 2.1px;
   bottom: 0;
   background-color: #4d699d;
-  color: black;
+  color: #555;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
