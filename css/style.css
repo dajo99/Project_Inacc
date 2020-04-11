@@ -764,3 +764,9 @@ input[type="checkbox"] {
   color: #4d699d;
   background-color: white;
 }
+/* Safari remove telephone white background */
+
+a[href^=tel] {
+  text-decoration:inherit;
+  color: inherit;
+}
