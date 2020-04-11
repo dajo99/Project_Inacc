@@ -233,7 +233,7 @@ table.p-0 td {
   background-color: black;
   padding: 0;
   margin: 0;
-  margin-top: 100px;
+ 
 }
 
 .bg-image {
@@ -271,7 +271,11 @@ table.p-0 td {
 .intro-title {
   font-size: 125px;
 }
-
+@media (max-width: 768px){
+  .intro {
+    margin-top: 100px;
+  }
+}
 @media (max-width: 550px),
 (max-height: 550px) {
   .intro-title {
