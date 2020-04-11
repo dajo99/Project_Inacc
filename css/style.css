@@ -17,6 +17,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.05);
+  color: white;
   z-index: 1;
 }
 
@@ -47,6 +48,7 @@
 .media h4 {
   font-size: 90%;
   color: #aaa;
+  background-color: white;
   margin-top: 0;
 }
 
@@ -100,11 +102,9 @@
   margin-top: initial;
 }
 
-#services-images-mob,
-#services-images-pc {
-  position: relative;
-  z-index: 1;
-}
+/*======================================
+//--//-->   Body
+======================================*/
 
 html,
 body {
@@ -198,6 +198,7 @@ h2 {
   transform: scaleX(0.85);
   transform-origin: left;
 }
+
 .fix-trans,
 .link {
   transform-origin: center;
@@ -262,7 +263,8 @@ table.p-0 td {
   font-size: 125px;
 }
 
-@media (max-width: 550px), (max-height: 550px) {
+@media (max-width: 550px),
+(max-height: 550px) {
   .intro-title {
     font-size: 60px;
   }
@@ -336,16 +338,21 @@ input[type="email"]:focus,
   box-shadow: 0 0 0 2.1px #ccc;
   border: 1px solid #ccc;
 }
+
 /*.cb-style{
   width: 15px;
   height: 15px;
 }*/
 input[type="checkbox"] {
   /* Double-sized Checkboxes */
-  -ms-transform: scale(1.5); /* IE */
-  -moz-transform: scale(1.5); /* FF */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
-  -o-transform: scale(1.5); /* Opera */
+  -ms-transform: scale(1.5);
+  /* IE */
+  -moz-transform: scale(1.5);
+  /* FF */
+  -webkit-transform: scale(1.5);
+  /* Safari and Chrome */
+  -o-transform: scale(1.5);
+  /* Opera */
   transform: scale(1.5);
   margin-top: 8px;
   left: 23px;
@@ -365,12 +372,12 @@ input[type="checkbox"] {
     margin-right: auto;
   }
 }
-@media (min-width: 768px) {
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
-}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
 
 /*======================================
 //--//-->   Preloader
@@ -452,6 +459,7 @@ input[type="checkbox"] {
   width: 51%;
   height: 100%;
   background: white;
+  color: black;
   z-index: 1000;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -500,6 +508,152 @@ input[type="checkbox"] {
 
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
+}
+
+/*======================================
+//--//-->   Services
+======================================*/
+#services-images-mob,
+#services-images-pc {
+  position: relative;
+  z-index: 1;
+}
+
+.img-service a:hover {
+  cursor: pointer;
+}
+
+.overlay-image a:hover .centered {
+  background-image: url(../afbeeldingen/logo-inacc.png);
+  background-repeat: no-repeat;
+  background-position: center 78%;
+  background-size: 65%;
+}
+
+.img-service a:hover .centered {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: .8;
+  transition: all .4s ease;
+  border: 4px solid rgba(0, 0, 0);
+}
+
+.img-service a:hover .overlay-text {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 40px;
+}
+
+.img-service {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.centered {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  transition: all .7s ease;
+}
+
+.overlay-text {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 4px;
+  line-height: 18px;
+}
+
+.bg-img-acc,
+.bg-img-fisc,
+.bg-img-adv,
+.bg-img-wet {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-img-fisc {
+  background-image: url(../afbeeldingen/fiscaliteit.jpg);
+}
+
+.bg-img-acc {
+  background-image: url(../afbeeldingen/accountancy.jpg);
+}
+
+.bg-img-adv {
+  background-image: url(../afbeeldingen/advies.jpg);
+}
+
+.bg-img-wet {
+  background-image: url(../afbeeldingen/wettelijke-opdrachten.jpg);
+}
+
+.list-color {
+  color: #4d699d;
+  background-color: white;
+}
+
+.mobileShow {
+  display: none;
+}
+
+.pcShow {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .img-service a:hover .overlay-text {
+    height: 50px;
+  }
+
+  .centered {
+    height: 50px;
+  }
+
+  .overlay-text {
+    padding: 15px 1px;
+  }
+
+}
+
+@media (min-width: 900px) and (max-width:1200px) {
+  .img-service a:hover .centered {
+    background-size: 50%;
+  }
+
+  .centered {
+    height: 50px;
+  }
+
+  .img-service a:hover .overlay-text {
+    height: 50px;
+  }
+
+}
+
+/* Smartphone */
+@media only screen and (min-width : 320px) and (max-width : 750px) {
+  .mobileShow {
+    display: flex;
+  }
+
+  .pcShow {
+    display: none;
+  }
 }
 
 /*======================================
