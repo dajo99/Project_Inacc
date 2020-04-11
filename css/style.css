@@ -299,6 +299,17 @@ table.p-0 td {
   font-size: 18px;
 }
 
+a[href^=tel],
+a[href^=fax] {
+  text-decoration:none;
+  color: #bbb;
+  background-color: #222;
+}
+a[href^=tel]:hover,
+a[href^=fax]:hover{
+  text-decoration:underline;
+}
+
 /*.copyright{
   text-align: right;
 }*/
@@ -328,6 +339,10 @@ iframe {
   /*  margin-top: -85px;*/
   width: 100%;
   /*  height: 535px;*/
+}
+.contact-tel [href^=tel]{
+  color: #555;;
+  background-color: white;
 }
 
 /*FORM*/
@@ -766,7 +781,3 @@ input[type="checkbox"] {
 }
 /* Safari remove telephone white background */
 
-a[href^=tel] {
-  text-decoration:inherit;
-  color: inherit;
-}
