@@ -155,6 +155,14 @@ a:visited,
   font-size: 15px;
 }
 
+#mainNav {
+  position: absolute;
+  top: 0;
+  z-index: 1030;
+  display: block;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   body {
     padding-top: 100px;
@@ -225,6 +233,7 @@ table.p-0 td {
   background-color: black;
   padding: 0;
   margin: 0;
+  margin-top: 100px;
 }
 
 .bg-image {
@@ -301,13 +310,14 @@ table.p-0 td {
 
 a[href^=tel],
 a[href^=fax] {
-  text-decoration:none;
+  text-decoration: none;
   color: #bbb;
   background-color: #222;
 }
+
 a[href^=tel]:hover,
-a[href^=fax]:hover{
-  text-decoration:underline;
+a[href^=fax]:hover {
+  text-decoration: underline;
 }
 
 /*.copyright{
@@ -340,8 +350,10 @@ iframe {
   width: 100%;
   /*  height: 535px;*/
 }
-.tel-fix [href^=tel]{
-  color: #555;;
+
+.tel-fix [href^=tel] {
+  color: #555;
+  ;
   background-color: white;
 }
 
@@ -474,7 +486,8 @@ input[type="checkbox"] {
   width: 51%;
   height: 100%;
   background: white;
-  color:#555;;
+  color: #555;
+  ;
   z-index: 1000;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -677,7 +690,8 @@ input[type="checkbox"] {
 
 .accordion button {
   background-color: white;
-  color: #555;;
+  color: #555;
+  ;
   box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   font-size: 16px;
@@ -719,7 +733,8 @@ input[type="checkbox"] {
 .accordion .accordion-content a,
 .accordion .accordion-content a:hover,
 .accordion .accordion-content a:focus {
-  color: #555;;
+  color: #555;
+  ;
   background-color: white;
   -webkit-transition: color 0.3s ease-in-out 0s;
   transition: color 0.3s ease-in-out 0s;
@@ -779,5 +794,5 @@ input[type="checkbox"] {
   color: #4d699d;
   background-color: white;
 }
-/* Safari remove telephone white background */
 
+/* Safari remove telephone white background */
