@@ -121,9 +121,18 @@ body {
   flex-flow: column;
 }
 
+/*======================================
+//--//-->   NAV
+======================================*/
 .nav-link,
 .com-header {
   font-weight: bold;
+}
+
+nav{
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-nav .nav-link:link,
@@ -160,6 +169,13 @@ a:visited,
   top: 0;
   z-index: 1030;
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .nav-item{
+    border-top: 1px solid #ccc;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -206,11 +222,14 @@ h2 {
   transform-origin: left;
 }
 
-.fix-trans,
-.link {
+.fix-trans {
   transform-origin: center;
 }
-
+@media (max-width: 767px){
+  .fix-trans-contact{
+    transform-origin: center;
+  }
+} 
 h3 {
   font-family: "Play", "Open Sans", Arial, sans-serif;
   margin-bottom: 0.2rem;
@@ -270,9 +289,9 @@ table.p-0 td {
 .intro-title {
   font-size: 125px;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
   .intro {
-    margin-top: 100px;
+    margin-top: 95px;
   }
 }
 @media (max-width: 550px),
@@ -403,7 +422,12 @@ input[type="checkbox"] {
   }
 }
 
-@media (min-width: 768px) {}
+@media (max-width: 767px) {
+  .table-con{
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
 
 @media (min-width: 992px) {}
 
