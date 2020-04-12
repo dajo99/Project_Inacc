@@ -129,8 +129,6 @@ body {
   font-weight: bold;
 }
 
-
-
 .navbar-light .navbar-nav .nav-link:link,
 .navbar-light .navbar-nav .nav-link:visited {
   color: #444;
@@ -429,6 +427,13 @@ input[type="checkbox"] {
   .table-con{
     margin-left: auto;
     margin-right:auto;
+    text-align: left;
+    width:250px;
+  }
+  .table-con th,
+  .table-con td{
+  padding: 5px 8px !important;
+
   }
 }
 
