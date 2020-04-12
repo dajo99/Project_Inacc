@@ -129,11 +129,7 @@ body {
   font-weight: bold;
 }
 
-nav{
-  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
-}
+
 
 .navbar-light .navbar-nav .nav-link:link,
 .navbar-light .navbar-nav .nav-link:visited {
@@ -176,6 +172,11 @@ a:visited,
     border-top: 1px solid #ccc;
   }
 
+  nav{
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media (min-width: 768px) {
@@ -194,7 +195,9 @@ a:visited,
   }
 
   .scrolled #mainNav {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
   }
 
   .scrolled #mainNav .navbar-brand img {
