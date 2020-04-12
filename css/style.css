@@ -830,4 +830,26 @@ input[type="checkbox"] {
   background-color: white;
 }
 
-/* Safari remove telephone white background */
+/*======================================
+//--//-->   Vacatures
+======================================*/
+.card-title{
+  font-size: 150%;
+}
+.card-subtitle{
+  font-size: 120%;
+}
+
+.card-text{
+margin-left: -12px;
+}
+.card-body a{
+  color: white;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+.card-body a:hover{
+  background-color: #23272b;
+  border-color: #1d2124;
+  color:white;
+}
