@@ -170,7 +170,7 @@ a:visited,
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
   -webkit-background-size: cover;
   -moz-background-size : cover;
