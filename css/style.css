@@ -11,10 +11,6 @@ body {
   height: 100%;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   color: #555;
   background-color: #fff;
@@ -23,7 +19,6 @@ body {
   line-height: 1.7em;
   display: flex;
   flex-flow: column;
-  overflow: auto;
 }
 
 h1 {
@@ -177,6 +172,10 @@ a:visited,
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size : cover;
+  -o-background-size : cover;
+  transform: translateZ(0);
 }
 
 .intro .intro-content {
