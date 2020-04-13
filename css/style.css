@@ -5,6 +5,9 @@
 /*======================================
 //--//-->   Body
 ======================================*/
+.IE-fix {
+  height: 100%;
+}
 
 html,
 body {
@@ -25,7 +28,8 @@ h1 {
   font: 800 50px "Montserrat", sans-serif;
 }
 
-h2, .intro-subtitle {
+h2,
+.intro-subtitle {
   transform: scaleX(0.85);
 }
 
@@ -83,11 +87,11 @@ h3 {
     margin-top: -100px;
     visibility: hidden;
   }
-  
+
   .no-fix-anchors [id]::before {
     height: initial;
     margin-top: initial;
-  }  
+  }
 }
 
 /*======================================
@@ -175,7 +179,8 @@ a:visited,
   background: url(../afbeeldingen/banner.jpg) no-repeat fixed center/cover;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
   .bg-image {
     background-attachment: scroll;
     background-position: 50% 25%;
@@ -328,7 +333,8 @@ iframe {
   display: block;
 }
 
-#maps, #maps iframe {
+#maps,
+#maps iframe {
   height: 450px;
   width: 100%;
   overflow: hidden;
@@ -488,6 +494,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 900px) {
+
   .img-service a:hover .overlay-text,
   .centered {
     height: 50px;
@@ -646,22 +653,24 @@ main .fa-li {
   color: white;
 }
 
-.btncontact{
+.btncontact {
   display: block;
   margin: 0 auto;
   width: 60%;
 }
 
-@media (max-width:575px){
-.btncontact{
-  width: 65%;
+@media (max-width:575px) {
+  .btncontact {
+    width: 65%;
+  }
 }
-}
-@media (max-width:400px){
-  .btncontact{
+
+@media (max-width:400px) {
+  .btncontact {
     width: 80%;
   }
-  }
+}
+
 /*======================================
 //--//-->   Preloader
 ======================================*/
@@ -687,7 +696,7 @@ main .fa-li {
 }
 
 #loader,
-#loader:after{
+#loader:after {
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #4d699d;
