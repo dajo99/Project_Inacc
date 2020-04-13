@@ -684,9 +684,21 @@ input[type="checkbox"] {
 }
 
 .btncontact{
-  margin-left: 30%;
-  
+  display: block;
+  margin: 0 auto;
+  width: 60%;
 }
+
+@media (max-width:575px){
+.btncontact{
+  width: 65%;
+}
+}
+@media (max-width:400px){
+  .btncontact{
+    width: 80%;
+  }
+  }
 /*======================================
 //--//-->   Preloader
 ======================================*/
