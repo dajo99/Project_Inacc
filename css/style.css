@@ -133,10 +133,6 @@ a:visited,
 
   #mainNav {
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -162,8 +158,6 @@ a:visited,
 .intro {
   color: #fff;
   background-color: black;
-  padding: 0;
-  margin: 0;
 }
 
 .bg-image {
@@ -567,10 +561,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 900px) {
-  .img-service a:hover .overlay-text {
-    height: 50px;
-  }
-
+  .img-service a:hover .overlay-text,
   .centered {
     height: 50px;
   }
@@ -578,7 +569,6 @@ input[type="checkbox"] {
   .overlay-text {
     padding: 15px 1px;
   }
-
 }
 
 @media (min-width: 900px) and (max-width:1200px) {
@@ -586,36 +576,16 @@ input[type="checkbox"] {
     background-size: 50%;
   }
 
-  .centered {
-    height: 50px;
-  }
-
+  .centered,
   .img-service a:hover .overlay-text {
     height: 50px;
   }
 
 }
 
-/* Smartphone */
-@media only screen and (min-width : 320px) and (max-width : 750px) {
-  .mobileShow {
-    display: flex;
-  }
-
-  html,
-  body {
-    overflow: visible;
-  }
-
-  .pcShow {
-    display: none;
-  }
-}
-
 /*======================================
 //--//-->   Links
 ======================================*/
-
 .accordion button {
   background-color: white;
   color: #555;
@@ -717,11 +687,6 @@ input[type="checkbox"] {
   left: -2.2em;
 }
 
-.list-color {
-  color: #4d699d;
-  background-color: white;
-}
-
 /*======================================
 //--//-->   Vacatures
 ======================================*/
@@ -729,8 +694,11 @@ input[type="checkbox"] {
   font-size: 150%;
 }
 
-.card-subtitle {
+.card-subtitle-vac {
   font-size: 120%;
+  color: #aaa;
+  background-color: white;
+  margin-top: 0;
 }
 
 .card-body a {
@@ -765,14 +733,16 @@ input[type="checkbox"] {
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
+  z-index: 1001;
+}
+
+#loader,
+#loader:after{
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #4d699d;
-
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
-
-  z-index: 1001;
 }
 
 #loader:after {
@@ -782,12 +752,6 @@ input[type="checkbox"] {
   left: 15px;
   right: 15px;
   bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #4d699d;
-
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -825,7 +789,6 @@ input[type="checkbox"] {
   height: 100%;
   background: white;
   color: #555;
-  ;
   z-index: 1000;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
