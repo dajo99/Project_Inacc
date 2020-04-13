@@ -14,8 +14,12 @@ $(function () {
         }
     });
 
-/*
+    $(window).on('mousedown wheel DOMMouseScroll mousewheel keyup touchmove', function (e) {
+        $('html, body').stop();
+    });
+
     $(window).on('hashchange load', function (e) {
+        console.log(hash);
         if (hash) {
             let speed = 750 + 0.5 * ($(hash).offset().top - $(document).scrollTop());
             $('html, body').animate({
@@ -28,37 +32,11 @@ $(function () {
 
     $('a[href*="#"]').click(function (e) {
         e.preventDefault();
-        hash = this.hash;
-        $(window).trigger('hashchange');
-    });*/
-
-    $(window).on('scroll', function(e) {
-        $('html, body').stop();
-    });
-
-    $(window).on('hashchange load', function (e) {
-        console.log(hash);
-        if (hash) {
-            let speed = 1750 + 0.5 * ($(hash).offset().top - $(document).scrollTop());
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, speed, 'swing', function () {
-                location.hash = hash;
-            });
-        }
-    });
-
-    $('a[href*="#"]').click(function (e) {
-        e.preventDefault();
         setHash(this.hash);
     });
-});
 
-$(document).ready(function() {
- 
-    setTimeout(function(){
+    setTimeout(function () {
         $('body').addClass('loaded');
-        
+
     }, 400);
- 
 });
