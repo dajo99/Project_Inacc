@@ -35,6 +35,12 @@ h2 {
   transform-origin: left;
 }
 
+.footer h2 {
+  font-family: inherit;
+  transform: scaleX(0.9);
+  letter-spacing: 1px;
+}
+
 .intro-subtitle {
   letter-spacing: 1.5px;
   font: italic 35px "Montserrat Alternates", sans-serif;
