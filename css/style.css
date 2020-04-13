@@ -14,8 +14,7 @@ body {
 body {
   color: #555;
   background-color: #fff;
-  font-family: "Play", "Open Sans", Arial, sans-serif;
-  font-size: 15px;
+  font: 15px "Play", "Open Sans", Arial, sans-serif;
   line-height: 1.7em;
   display: flex;
   flex-flow: column;
@@ -23,18 +22,23 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 800;
-  font-family: "Montserrat", sans-serif;
+  font: 800 50px "Montserrat", sans-serif;
+}
+
+h2, .intro-subtitle {
+  transform: scaleX(0.85);
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
+  font: 600 25px "Montserrat", sans-serif;
   margin-bottom: 1rem;
-  transform: scaleX(0.85);
   transform-origin: left;
+}
+
+.intro-subtitle {
+  letter-spacing: 1.5px;
+  font: italic 35px "Montserrat Alternates", sans-serif;
+  line-height: 40px;
 }
 
 .fix-trans {
@@ -42,15 +46,9 @@ h2 {
 }
 
 h3 {
-  font-family: "Play", "Open Sans", Arial, sans-serif;
   margin-bottom: 0.2rem;
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-table.p-0 th,
-table.p-0 td {
-  padding: 0;
 }
 
 .about-title {
@@ -168,20 +166,21 @@ a:visited,
 }
 
 .bg-image {
-  background-image: url(../afbeeldingen//banner.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(../afbeeldingen/banner.jpg) no-repeat fixed center/cover;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .bg-image {
     background-attachment: scroll;
+    background-position: 50% 25%;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .bg-image {
+    background-attachment: scroll;
+    background-position: 50% 25%;
   }
 }
 
@@ -199,15 +198,6 @@ a:visited,
   opacity: 0.9;
 }
 
-.intro-subtitle {
-  letter-spacing: 1.5px;
-  font-style: italic;
-  font-size: 35px;
-  font-family: "Montserrat Alternates", sans-serif;
-  transform: scaleX(0.85);
-  line-height: 40px;
-}
-
 .intro-title {
   font-size: 125px;
 }
@@ -221,12 +211,6 @@ a:visited,
   .intro .intro-subtitle {
     font-size: 25px;
     line-height: 30px;
-  }
-}
-
-@supports (-webkit-touch-callout: none) {
-  .bg-image {
-    background-attachment: scroll;
   }
 }
 
@@ -251,10 +235,6 @@ a:visited,
   border-color: #333;
 }
 
-.com-header {
-  font-size: 18px;
-}
-
 a[href^=tel],
 a[href^=fax] {
   text-decoration: none;
@@ -266,10 +246,6 @@ a[href^=tel]:hover,
 a[href^=fax]:hover {
   text-decoration: underline;
 }
-
-/*.copyright{
-  text-align: right;
-}*/
 
 /*======================================
 //--//-->   Team
@@ -295,10 +271,6 @@ a[href^=fax]:hover {
   filter: grayscale(0.3);
 }
 
-.media img {
-  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
-}
-
 .card {
   box-shadow: 0 8px 15px 8px rgba(0, 0, 0, 0.1);
   border: none;
@@ -309,21 +281,18 @@ a[href^=fax]:hover {
   min-height: 0.01px;
 }
 
-.card-title,
-.media h3 {
+.card-title {
   margin-bottom: 0.5rem;
 }
 
-.card-subtitle,
-.media h4 {
+.card-subtitle {
   font-size: 90%;
   color: #aaa;
   background-color: white;
   margin-top: 0;
 }
 
-.card p,
-.media p {
+.card p {
   margin-top: 1rem;
 }
 
@@ -354,17 +323,10 @@ iframe {
   display: block;
 }
 
-#maps {
+#maps, #maps iframe {
   height: 450px;
   width: 100%;
   overflow: hidden;
-  position: relative;
-}
-
-#maps iframe {
-  /*  margin-top: -85px;*/
-  width: 100%;
-  /*  height: 535px;*/
 }
 
 .tel-fix [href^=tel] {
@@ -390,10 +352,6 @@ input[type="email"]:focus,
   border: 1px solid #ccc;
 }
 
-/*.cb-style{
-  width: 15px;
-  height: 15px;
-}*/
 input[type="checkbox"] {
   /* Double-sized Checkboxes */
   -ms-transform: scale(1.5);
@@ -524,19 +482,6 @@ input[type="checkbox"] {
   background-image: url(../afbeeldingen/wettelijke-opdrachten.jpg);
 }
 
-.list-color {
-  color: #4d699d;
-  background-color: white;
-}
-
-.mobileShow {
-  display: none;
-}
-
-.pcShow {
-  display: flex;
-}
-
 @media (max-width: 900px) {
   .img-service a:hover .overlay-text,
   .centered {
@@ -660,8 +605,15 @@ input[type="checkbox"] {
   padding-bottom: 0;
 }
 
+main .fa-li {
+  color: #4d699d;
+  background: white;
+}
+
 .accordion .accordion-content .dropdown-item .fa-li {
   left: -2.2em;
+  padding-top: .3rem;
+  padding-left: 1rem;
 }
 
 /*======================================
