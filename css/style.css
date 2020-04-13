@@ -466,8 +466,7 @@ input[type="checkbox"] {
 /*======================================
 //--//-->   Services
 ======================================*/
-#services-images-mob,
-#services-images-pc {
+#services-images {
   position: relative;
   z-index: 1;
 }
