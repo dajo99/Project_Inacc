@@ -370,6 +370,7 @@ a[href^=fax]:hover {
 #contact-image-1 div {
   background: url("../afbeeldingen/kantoor-inacc-1.jpg") no-repeat 10%;
   background-size: cover;
+  min-height: 212px;
 }
 
 iframe {
