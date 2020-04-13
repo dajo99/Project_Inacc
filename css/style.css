@@ -176,7 +176,6 @@ a:visited,
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  transform: translateZ(0);
 }
 
 .intro .intro-content {
