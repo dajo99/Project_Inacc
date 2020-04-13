@@ -53,9 +53,10 @@ table.p-0 td {
   padding: 0;
 }
 
-.about-title{
+.about-title {
   margin-bottom: .5rem;
 }
+
 @media (max-width: 767px) {
   .fix-trans-contact {
     transform-origin: center;
@@ -173,8 +174,8 @@ a:visited,
   background-attachment: fixed;
   position: relative;
   -webkit-background-size: cover;
-  -moz-background-size : cover;
-  -o-background-size : cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   transform: translateZ(0);
 }
 
@@ -222,8 +223,11 @@ a:visited,
     line-height: 30px;
   }
 }
+
 @supports (-webkit-touch-callout: none) {
-  .bg-image {background-attachment: scroll;}
+  .bg-image {
+    background-attachment: scroll;
+  }
 }
 
 /*======================================
