@@ -728,10 +728,6 @@ input[type="checkbox"] {
   font-size: 120%;
 }
 
-.card-text {
-  margin-left: -12px;
-}
-
 .card-body a {
   color: white;
   background-color: #343a40;
