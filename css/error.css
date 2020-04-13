@@ -22,11 +22,6 @@
     font-size: 20px;
 }
 
-.button {
-    background-color: transparent !important;
-    color: white !important;
-}
-
 @media (min-width: 700px) {
     .tekst {
         padding-top: 35px;
@@ -39,10 +34,6 @@
     .regel {
         font-size: 30px;
     }
-
-    /*.padding-sm {
-        padding: rem;
-    }*/
 }
 
 @media (min-width: 900px) {
