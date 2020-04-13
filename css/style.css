@@ -179,6 +179,12 @@ a:visited,
   -o-background-size: cover;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
+
 .intro .intro-content {
   position: relative;
   padding: 5rem 0;
