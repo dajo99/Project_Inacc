@@ -118,7 +118,7 @@ a:visited,
 
 .foot-link a:link,
 .foot-link a:visited {
-  color: #4d699d;
+  color: #708aba;
   background-color: #222;
 }
 
@@ -236,13 +236,18 @@ a:visited,
 }
 
 .footer h2 {
-  color: #4d699d;
+  color: #5270a7;
   background-color: #222;
   margin-bottom: 0.2rem;
 }
 
 .footer hr {
   border-color: #333;
+}
+
+.text-muted {
+color: #858d96 !important;
+background-color: #222;
 }
 
 a[href^=tel],
@@ -297,7 +302,7 @@ a[href^=fax]:hover {
 
 .card-subtitle {
   font-size: 90%;
-  color: #aaa;
+  color: #717171;
   background-color: white;
   margin-top: 0;
 }
@@ -637,7 +642,7 @@ main .fa-li {
 
 .card-subtitle-vac {
   font-size: 120%;
-  color: #aaa;
+  color: #717171;
   background-color: white;
   margin-top: 0;
 }
