@@ -263,22 +263,6 @@ a[href^=fax]:hover {
   text-decoration: underline;
 }
 
-.list-item-btw{
-  margin-left: -30px;
-
-}
-.smallfont{
-  font-size: 60%;
-  display:inline-block;
-  scroll-padding-right: 5px;
-  padding-right: 20px;
-}
-
-.list-item-footer{
-  padding-left:10px;
-  
-}
-
 .footer .fa-ul {
   padding-left: 0;
   margin-left: 0;
