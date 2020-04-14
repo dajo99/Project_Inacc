@@ -283,6 +283,7 @@ a[href^=fax]:hover {
 
 .footer .fa-ul small {
   font-size: 60%;
+  margin-top: -1px;
 }
 
 /*======================================
