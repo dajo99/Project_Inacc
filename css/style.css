@@ -21,6 +21,7 @@ body {
   line-height: 1.7em;
   display: flex;
   flex-flow: column;
+  letter-spacing: 0.01em;
 }
 
 h1 {
@@ -41,8 +42,8 @@ h2 {
 
 .footer h2 {
   font-family: inherit;
-  transform: scaleX(0.9);
-  letter-spacing: 1px;
+  transform: scaleX(0.96);
+  letter-spacing: 0.03em;
 }
 
 .intro-subtitle {
