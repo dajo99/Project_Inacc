@@ -444,11 +444,14 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.overlay-image a:hover .centered {
-  background-image: url(../afbeeldingen/logo-inacc.png);
+.overlay-image a .centered {
   background-repeat: no-repeat;
   background-position: center 78%;
   background-size: 65%;
+}
+
+.overlay-image a:hover .centered {
+  background-image: url(../afbeeldingen/logo-inacc.png);
 }
 
 .img-service a:hover .centered {
@@ -460,11 +463,11 @@ input[type="checkbox"] {
   z-index: 1;
   opacity: .8;
   transition: all .4s ease;
-  border: 4px solid rgba(0, 0, 0);
+  border: 4px solid black;
 }
 
 .img-service a:hover .overlay-text {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: white;
   height: 40px;
 }
@@ -481,7 +484,7 @@ input[type="checkbox"] {
 
 .centered {
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   color: #FFF;
   bottom: 0;
   left: 0;
@@ -681,12 +684,6 @@ main .fa-li {
   background-color: #23272b;
   border-color: #1d2124;
   color: white;
-}
-
-.btncontact {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
 }
 
 @media (max-width:575px) {
