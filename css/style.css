@@ -278,6 +278,29 @@ a[href^=fax]:hover {
   padding-left:10px;
   
 }
+
+.footer .fa-ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.footer .fa-li, .footer .fa-ul small {
+  position: static;
+  left: initial;
+  width: 2rem;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+}
+
+.footer .fa-li {
+  padding-left: 1px;
+}
+
+.footer .fa-ul small {
+  font-size: 60%;
+}
+
 /*======================================
 //--//-->   Team
 ======================================*/
