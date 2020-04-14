@@ -371,16 +371,16 @@ input[type="email"]:focus,
 
 input[type="checkbox"] {
   /* Double-sized Checkboxes */
-  -ms-transform: scale(1.5);
+  -ms-transform: scale(1.4);
   /* IE */
-  -moz-transform: scale(1.5);
+  -moz-transform: scale(1.4);
   /* FF */
-  -webkit-transform: scale(1.5);
+  -webkit-transform: scale(1.4);
   /* Safari and Chrome */
-  -o-transform: scale(1.5);
+  -o-transform: scale(1.4);
   /* Opera */
-  transform: scale(1.5);
-  margin-top: 8px;
+  transform: scale(1.4);
+  margin-top: 6px;
   left: 23px;
 }
 
