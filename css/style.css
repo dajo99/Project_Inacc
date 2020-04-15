@@ -297,7 +297,7 @@ a[href^=fax]:hover {
 
 .bg-about-1{
   background-image: url(../afbeeldingen/kantoor-inacc-4.jpg);
-  background-position:top center;
+  background-position:center center;
 }
 .bg-about-2{
   background-image: url(../afbeeldingen/teams_4.jpg);
