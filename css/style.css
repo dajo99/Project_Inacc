@@ -195,6 +195,11 @@ a:visited,
   }
 }
 
+body.safari .bg-image {
+  background-attachment: scroll;
+  background-position: 50% 25%;
+}
+
 .intro .intro-content {
   position: relative;
   padding: 5rem 0;
