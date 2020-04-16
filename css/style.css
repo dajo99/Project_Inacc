@@ -16,12 +16,16 @@ body {
 
 body {
   color: #555;
-  background-color: #fff;
+  background-color: #222;
   font: 15px "Play", "Open Sans", Arial, sans-serif;
   line-height: 1.7em;
   display: flex;
   flex-flow: column;
   letter-spacing: 0.01em;
+}
+
+.d-flex, .navbar, header, main {
+  background-color: white;
 }
 
 h1 {
@@ -73,8 +77,13 @@ h3 {
 }
 
 @media (min-width: 992px) {
+/*
   body {
     padding-top: 100px;
+  }*/
+
+  .intro-content {
+    margin-top: 100px;
   }
 
   [id]::before {
