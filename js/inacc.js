@@ -19,7 +19,7 @@ $(function () {
     });
 
     $(window).on('hashchange load', function (e) {
-        console.log(hash);
+    //  console.log(hash);
         if (hash) {
             let speed = 750 + 0.5 * ($(hash).offset().top - $(document).scrollTop());
             $('html, body').animate({
