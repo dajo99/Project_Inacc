@@ -24,7 +24,7 @@ body {
   letter-spacing: 0.01em;
 }
 
-.d-flex, .navbar, header, main {
+.d-flex, .navbar, .intro, main {
   background-color: white;
 }
 
@@ -77,11 +77,6 @@ h3 {
 }
 
 @media (min-width: 992px) {
-/*
-  body {
-    padding-top: 100px;
-  }*/
-
   .intro-content {
     margin-top: 100px;
   }
@@ -138,9 +133,9 @@ a:visited,
 }
 
 #mainNav {
-  top: 0;
-  z-index: 1030;
-  width: 100%;
+  z-index: 999;
+  width: 100%; 
+  flex-shrink: 0;
 }
 
 @media (max-width: 991px) {
@@ -429,6 +424,7 @@ iframe {
 
 .table-con {
   width: 220px;
+  text-align: left;
 }
 
 .table-con th,
@@ -467,20 +463,12 @@ input[type="checkbox"] {
   display: inline;
 }
 
-@media (max-width: 576px) {
-  #form1 {
-    width: 93%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media (max-width: 767px) {
   .table-con {
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-    width: 250px;
+    width: 80%;
+    max-width: 280px;
   }
 }
 
