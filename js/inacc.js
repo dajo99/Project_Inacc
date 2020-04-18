@@ -15,7 +15,7 @@ $(function () {
     });
 
     $(window).on('mousedown wheel DOMMouseScroll mousewheel keyup touchmove', function (e) {
-        $('html, body').stop();
+        $('html, body').stop(true,false);
     });
 
     $(window).on('hashchange load', function (e) {

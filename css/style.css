@@ -8,7 +8,6 @@
 /*.IE-fix {
   height: 100%;
 }*/
-
 html,
 body {
   height: 100%;
@@ -16,7 +15,7 @@ body {
 
 body {
   color: #555;
-  background-color: #222;
+  background-color: white;
   font: 15px "Play", "Open Sans", Arial, sans-serif;
   line-height: 1.7em;
   display: flex;
@@ -24,9 +23,10 @@ body {
   letter-spacing: 0.01em;
 }
 
-.d-flex, .navbar, .intro, main {
+/*.d-flex, .navbar, main {
   background-color: white;
-}
+  color: #555
+}*/
 
 h1 {
   text-transform: uppercase;
@@ -44,7 +44,7 @@ h2 {
   transform-origin: left;
 }
 
-.footer h2 {
+footer h2 {
   font-family: inherit;
   transform: scaleX(0.96);
   letter-spacing: 0.03em;
@@ -233,7 +233,7 @@ body.safari .bg-image {
 /*======================================
 //--//-->   FOOTER
 ======================================*/
-.footer {
+footer {
   margin-top: auto;
   background-color: #222;
   color: #bbb;
@@ -241,13 +241,13 @@ body.safari .bg-image {
   position: relative;
 }
 
-.footer h2 {
+footer h2 {
   color: #5270a7;
   background-color: #222;
   margin-bottom: 0.2rem;
 }
 
-.footer hr {
+footer hr {
   border-color: #333;
 }
 
@@ -268,13 +268,13 @@ a[href^=fax]:hover {
   text-decoration: underline;
 }
 
-.footer .fa-ul {
+footer .fa-ul {
   padding-left: 0;
   margin-left: 0;
 }
 
-.footer .fa-li,
-.footer .fa-ul small {
+footer .fa-li,
+footer .fa-ul small {
   position: static;
   left: initial;
   width: 2rem;
@@ -283,11 +283,11 @@ a[href^=fax]:hover {
   text-align: left;
 }
 
-.footer .fa-li {
+footer .fa-li {
   padding-left: 1px;
 }
 
-.footer .fa-ul small {
+footer .fa-ul small {
   font-size: 60%;
   margin-top: -1px;
 }
@@ -632,13 +632,13 @@ input[type="checkbox"] {
   position: relative;
   display: block;
   width: 100%;
+  color: #555;
+  background-color: white;
 }
 
 .accordion .accordion-content a,
 .accordion .accordion-content a:hover,
 .accordion .accordion-content a:focus {
-  color: #555;
-  background-color: white;
   -webkit-transition: color 0.3s ease-in-out 0s;
   transition: color 0.3s ease-in-out 0s;
 }
@@ -751,6 +751,17 @@ main .fa-li {
   z-index: 1000;
 }
 
+#loader,
+#loader:after {
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  border-top: 3px solid #4d699d;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
 #loader {
   display: block;
   position: relative;
@@ -760,15 +771,6 @@ main .fa-li {
   height: 150px;
   margin: -75px 0 0 -75px;
   z-index: 1001;
-}
-
-#loader,
-#loader:after {
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #4d699d;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
 }
 
 #loader:after {
