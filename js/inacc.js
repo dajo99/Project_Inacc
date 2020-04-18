@@ -1,4 +1,5 @@
 let hash = location.hash;
+let isAnimating = false;
 
 function setHash(h) {
     hash = h;
@@ -15,17 +16,25 @@ $(function () {
     });
 
     $(window).on('mousedown wheel DOMMouseScroll mousewheel keyup touchmove', function (e) {
-        $('html, body').stop(true,false);
+        if (isAnimating) {
+            $('html, body').stop(true, false);
+        }
     });
 
     $(window).on('hashchange load', function (e) {
-    //  console.log(hash);
         if (hash) {
-            let speed = 750 + 0.5 * ($(hash).offset().top - $(document).scrollTop());
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, speed, 'swing', function () {
-                location.hash = hash;
+            }, {
+                duration: 750 + 0.5 * ($(hash).offset().top - $(document).scrollTop()),
+                easing: 'swing',
+                start: function() {
+                    isAnimating = true;
+                },
+                complete: function () {
+                    isAnimating = false;
+                    location.hash = hash;
+                }
             });
         }
     });
