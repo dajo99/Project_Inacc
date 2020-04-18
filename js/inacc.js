@@ -28,7 +28,7 @@ $(function () {
             }, {
                 duration: 750 + 0.5 * ($(hash).offset().top - $(document).scrollTop()),
                 easing: 'swing',
-                start: function() {
+                start: function () {
                     isAnimating = true;
                 },
                 complete: function () {
