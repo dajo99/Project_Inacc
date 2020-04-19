@@ -9,9 +9,7 @@ Auteurs: Wouters Midas, Vandoninck Dajo, Beliën Kevin
 /*======================================
 //--//-->   Body
 ======================================*/
-/*.IE-fix {
-  height: 100%;
-}*/
+
 html,
 body {
   height: 100%;
@@ -30,11 +28,6 @@ body,
   line-height: 1.7em;
   letter-spacing: 0.01em;
 }
-
-/*.d-flex, .navbar, main {
-  background-color: white;
-  color: #555
-}*/
 
 h1 {
   text-transform: uppercase;
