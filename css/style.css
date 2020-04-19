@@ -429,7 +429,8 @@ iframe {
 }
 
 
-.tel-fix [href^=tel] {
+.tel-fix [href^=tel],
+.tel-fix [href^=fax] {
   color: #555;
   background-color: white;
 }
