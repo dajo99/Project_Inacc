@@ -1,3 +1,7 @@
+/* =======================================================
+    Auteurs: Wouters Midas, Vandoninck Dajo, Beliën Kevin
+  ======================================================= */
+
 let hash = location.hash;
 let isAnimating = false;
 
