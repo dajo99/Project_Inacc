@@ -486,10 +486,6 @@ input[type="checkbox"] {
   z-index: 1;
 }
 
-.img-service a:hover {
-  cursor: pointer;
-}
-
 .overlay-image a .centered {
   background-repeat: no-repeat;
   background-position: center 78%;
@@ -515,7 +511,6 @@ input[type="checkbox"] {
 .img-service a:hover .overlay-text {
   background-color: black;
   color: white;
-  height: 40px;
 }
 
 .img-service {
@@ -572,6 +567,18 @@ input[type="checkbox"] {
   background-image: url(../afbeeldingen/wettelijke-opdrachten.jpg);
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .overlay-image a .centered {
+    background-position: center 90%;
+  }
+}
+
+@media (max-width: 575px){
+.container{
+  width: 87%;
+}
+}
+
 @media (max-width: 900px) {
 
   .img-service a:hover .overlay-text,
@@ -584,14 +591,19 @@ input[type="checkbox"] {
   }
 }
 
-@media (min-width: 900px) and (max-width:1200px) {
+@media (min-width: 992px) and (max-width:1200px) {
   .img-service a:hover .centered {
-    background-size: 50%;
+    background-size: 60%;
+    background-position: center 85%;
   }
 
   .centered,
   .img-service a:hover .overlay-text {
-    height: 50px;
+    height: 43px;
+    
+  }
+  .overlay-text{
+    padding-top:4px;
   }
 
 }
