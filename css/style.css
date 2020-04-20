@@ -573,12 +573,6 @@ input[type="checkbox"] {
   }
 }
 
-@media (max-width: 575px){
-.container{
-  width: 87%;
-}
-}
-
 @media (max-width: 900px) {
 
   .img-service a:hover .overlay-text,
@@ -593,7 +587,7 @@ input[type="checkbox"] {
 
 @media (min-width: 992px) and (max-width:1200px) {
   .img-service a:hover .centered {
-    background-size: 60%;
+    background-size: 65%;
     background-position: center 85%;
   }
 
